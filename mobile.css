@@ -1,0 +1,22 @@
+.m_gif {
+  position: absolute;
+  left: 50%;
+  top: 39%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m_text {
+  position: absolute;
+  left: 50%;
+  top: 56%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 6vw;
+  text-align: justify;
+}

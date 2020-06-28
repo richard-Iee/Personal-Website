@@ -1,0 +1,631 @@
+.t_sidebar {
+  position: fixed;
+  width: 100%;
+  height: 27%;
+  top: -27%;
+  background-color: #2a3344;
+  z-index: 999;
+  transition: 0.5s ease-in-out;
+}
+
+.t_barLeft {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0vw;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.t_barRight {
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  top: 0vw;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.t_barLeftText {
+  font-size: 2vw;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  padding: 2vw;
+}
+
+.t_hamMenu {
+  position: absolute;
+  color: white;
+  font-size: 3.5vw;
+  left: 96%;
+  cursor: pointer;
+}
+
+.t_hamMenuAft {
+  position: absolute;
+  top: 0.3%;
+  left: 39.2%;
+  color: white;
+  font-size: 3.5vw;
+}
+
+.t_flexButtons {
+  position: fixed;
+  right: 0;
+  top: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 5vw;
+  height: 20vw;
+}
+
+.t_scrollMenu {
+  display: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  height: 5vw;
+  background-color: #212121;
+}
+
+.t_backToTop {
+  display: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  height: 5vw;
+  background-color: #ff2121;
+}
+
+.t_toBottom {
+  display: none;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5vw;
+  height: 5vw;
+  background-color: rgb(54, 0, 114);
+}
+
+.t_s1 {
+  background-color: #ededed;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.t_s2 {
+  /* height: 781.25vw; */
+  scroll-snap-align: start;
+  margin-left: 7%;
+  margin-right: 7%;
+  margin-bottom: 10vw;
+  color: #212121;
+  font-family: "SansSerifFLF Demibold";
+}
+
+.t_s3 {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+}
+
+.t_frontLeftPic {
+  background-color: lightblue;
+  overflow: hidden;
+  flex: 0.43;
+  background-image: url("./Assets/BACKDROP_DESIGN_VECTOR_16/Ultra\ Violet\ Galactic\ Background\ Free\ Vector.jpg");
+  background-size: auto 100%;
+  background-position: 85%;
+}
+
+.t_frontRightPic {
+  background-color: #ededed;
+  flex: 0.57;
+}
+
+.t_myLink {
+  padding-left: 8%;
+  padding-top: 13%;
+  font-size: 2.3vw;
+  letter-spacing: 0.5px;
+  font-family: "SansSerifBldFLF Medium";
+  color: white;
+}
+
+.t_myPic {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: url("./Assets/2.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t_frontBottomShort {
+  position: relative;
+  top: 2vw;
+  left: 3vw;
+  font-size: 2vw;
+  font-family: "SansSerifBldFLF Medium";
+  text-align: justify;
+}
+
+.t_frontBottomLong {
+  position: relative;
+  top: 3.5vw;
+  left: 3vw;
+  width: 73%;
+  font-size: 2vw;
+  font-family: "SansSerifFLF Demibold";
+  text-align: justify;
+  letter-spacing: 1px;
+  line-height: 3.5vw;
+}
+
+.t_cvButton {
+  position: relative;
+  top: -30%;
+  left: 80%;
+  height: 20%;
+  width: 16%;
+  background-color: #2a3344;
+  -webkit-box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
+  box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+}
+
+.t_cvButton p {
+  color: white;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 2vw;
+  margin-top: 1.7vw;
+}
+
+.t_catchUp {
+  position: relative;
+  top: 45%;
+  left: 22%;
+  width: 55%;
+  height: 12%;
+  color: white;
+}
+
+.t_catchUpInside {
+  height: 100%;
+  width: 100%;
+  border-style: solid;
+  border-width: 0.2vw;
+  border-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-top: 0.1vw;
+  font-size: 2vw;
+  font-family: "SansSerifFLF Demibold";
+}
+
+.t_scrollDown {
+  position: absolute;
+  left: 89%;
+  top: 69%;
+}
+
+.t_iconsFront {
+  position: relative;
+  top: 53%;
+  left: 37%;
+  word-spacing: 2.2vw;
+}
+
+.t_frontBottom {
+  flex: 0.28;
+}
+
+.t_padTop {
+  width: 100%;
+  height: 1%;
+}
+
+.t_s2 p {
+  /* position: relative; */
+  /* top: 1.04%; */
+  font-size: 4vw;
+}
+
+.t_breakLine {
+  height: 0vw;
+  width: 100%;
+  border-bottom: 1.5px solid #212121;
+}
+
+.t_belowBr {
+  height: 3vw;
+  width: 100%;
+}
+
+.t_bothSides {
+  width: 100%;
+  height: 2.4vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.t_bothSidesLeft {
+  height: 100%;
+}
+
+.t_bothSidesRight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t_pButton {
+  height: 4vw;
+  width: 25%;
+  background-color: khaki;
+  display: flex;
+  margin-top: 2vw;
+}
+
+.t_pButtonText {
+  height: 100%;
+  flex: 0.75;
+  background: rgb(54, 0, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 0, 114, 1) 0%,
+    rgba(66, 0, 75, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1vw;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  padding-top: 0.2vw;
+}
+
+.t_pButtonimage {
+  height: 100%;
+  flex: 0.25;
+  background-color: #33a1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.t_appPic {
+  margin-top: 14vw;
+  height: 35vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.t_picBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.t_pGPic {
+  margin-top: 2.5vw;
+  width: 100%;
+  height: 57vw;
+  background-image: url("./Assets/UoA-PG-2019Logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t_schoolLogo {
+  width: 25vw;
+  height: 9vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t_Javascript {
+  margin-top: 3.5vw;
+  height: 3px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes animation {
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+#t_Javascript.animate {
+  animation: animation 1s forwards;
+}
+
+.t_Python {
+  margin-top: 3.5vw;
+  height: 3px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes t_Python {
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+
+#t_Python.animate {
+  animation: t_Python 1s forwards;
+}
+
+.t_Typescript {
+  margin-top: 3.5vw;
+  height: 3px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes t_Typescript {
+  100% {
+    opacity: 1;
+    width: 25%;
+  }
+}
+
+#t_Typescript.animate {
+  animation: t_Typescript 1s forwards;
+}
+
+.t_React {
+  margin-top: 3.5vw;
+  height: 3px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes t_React {
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+#t_React.animate {
+  animation: t_React 1s forwards;
+}
+
+.t_Adobe {
+  margin-top: 3.5vw;
+  height: 3px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes t_Adobe {
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+
+#t_Adobe.animate {
+  animation: t_Adobe 1s forwards;
+}
+
+.t_AWS {
+  margin-top: 3.5vw;
+  height: 3px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes t_AWS {
+  100% {
+    opacity: 1;
+    width: 12.5%;
+  }
+}
+
+#t_AWS.animate {
+  animation: t_AWS 1s forwards;
+}
+
+.t_conMes {
+  font-family: "SansSerifBldFLF Medium";
+  color: white;
+  font-size: 9vw;
+  width: 40%;
+  position: relative;
+  top: 7vw;
+  left: 7.2vw;
+  line-height: 10.5vw;
+}
+
+.t_contactList {
+  position: absolute;
+  width: 28vw;
+  height: 4.5vw;
+  position: relative;
+  top: 15vw;
+  /* top: 17vw; */
+  left: 7.2vw;
+  display: flex;
+}
+
+.t_viewRes {
+  border-width: 0.2vw;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 2vw;
+  padding-top: 0.15vw;
+  text-decoration: none;
+}
+
+.t_viewRes:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.t_bottomMessage {
+  position: absolute;
+  color: white;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 2vw;
+  position: relative;
+  left: 7.2vw;
+  top: 18vw;
+  letter-spacing: 0.01vw;
+}
+
+.t_rightBottom {
+  position: relative;
+  left: 58%;
+  top: -43vw;
+}
+
+.t_inputName {
+  width: 30vw;
+  color: white;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 2vw;
+  letter-spacing: 0.05vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.t_gapBetweenInputLine {
+  height: 0vw;
+  width: 50vw;
+}
+
+.t_inputLine {
+  width: 30vw;
+  height: 0.1vw;
+  margin-left: -0.2vw;
+  background-color: white;
+}
+
+.t_message {
+  background: transparent;
+  border: 0 none;
+  resize: none;
+  color: white;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 2vw;
+  outline: none;
+}
+
+.t_submitButton {
+  height: 4.5vw;
+  width: 15vw;
+  border-radius: 20vw;
+  border: 0 none;
+  background-color: #f2c477;
+  color: #212121;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 2vw;
+  padding-top: 0.23vw;
+}
+
+.t_submitButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.t_contactInfo {
+  position: absolute;
+  top: 62vh;
+}
+
+.t_bottomEles {
+  color: white;
+  font-family: "SansSerifBldFLF Medium";
+  font-size: 1.5vw;
+  letter-spacing: 0.06vw;
+}
+
+.t_bottomEles:hover {
+  color: white;
+}
+
+.t_dimond {
+  margin-right: 3vw;
+  position: relative;
+  top: -29vw;
+  left: 7.55vw;
+  height: 2vw;
+  width: 2vw;
+  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.t_wave {
+  margin-right: 3vw;
+  position: relative;
+  top: -17.7vw;
+  left: 7.55vw;
+  height: 2vw;
+  width: 11vw;
+  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

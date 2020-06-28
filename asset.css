@@ -1,0 +1,124 @@
+html {
+  scroll-snap-type: y proximity;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100%;
+  /* text-indent: -1vw; */
+  /* background-color: white; */
+}
+
+@font-face {
+  font-family: "SansSerifFLF Demibold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifFLF Demibold"),
+    url("./Fonts/SansSerifFLF-Demibold.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifFLF Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifFLF Medium"),
+    url("./Fonts/SansSerifFLF.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifFLF Medium Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifFLF Medium Italic"),
+    url("./Fonts/SansSerifFLF-DemiItalic.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifFLF Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifFLF Italic"),
+    url("./Fonts/SansSerifFLF-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifBldFLF Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifBldFLF Medium"),
+    url("./Fonts/SansSerifBldFLF.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifBldFLFCond Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifBldFLFCond Medium"),
+    url("./Fonts/SansSerifBldFLFCond.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifBookFLF Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifBookFLF Medium"),
+    url("./Fonts/SansSerifBookFLF.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifExbFLF Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifExbFLF Medium"),
+    url("./Fonts/SansSerifExbFLF.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifExbFLFCond Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifExbFLFCond Medium"),
+    url("./Fonts/SansSerifExbFLFCond.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifBldFLF-Italic Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifBldFLF-Italic Italic"),
+    url("./Fonts/SansSerifBldFLF-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifBldFLFCond Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifBldFLFCond Italic"),
+    url("./Fonts/SansSerifBldFLFCond-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifBookFLF Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifBookFLF Italic"),
+    url("./Fonts/SansSerifBookFLF-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifExbFLF Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifExbFLF Italic"),
+    url("./Fonts/SansSerifExbFLF-Italic.woff") format("woff");
+}
+@font-face {
+  font-family: "SansSerifExbFLFCond Italic";
+  font-style: normal;
+  font-weight: normal;
+  src: local("SansSerifExbFLFCond Italic"),
+    url("./Fonts/SansSerifExbFLFCond-Italic.woff") format("woff");
+}
+
+/* @media (prefers-color-scheme: light) {
+    body {
+      background-color: green;
+      color: black;
+    }
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: black;
+      color: white;
+    }
+  } */

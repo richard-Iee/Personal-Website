@@ -1,3 +1,10 @@
+.t_tabmd {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y proximity;
+}
+
 .t_sidebar {
   position: fixed;
   width: 100%;
@@ -122,6 +129,7 @@
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 90%;
   -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);

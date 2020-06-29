@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-170975862-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-170975862-1");
+    </script>
+
+    <title>oops!</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="./Assets/myIcon.png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="asset.css" />
+    <link rel="stylesheet" type="text/css" href="mobile.css" />
+    <link rel="stylesheet" type="text/css" href="tablet.css" />
+    <link rel="stylesheet" type="text/css" href="desktop.css" />
+    <link rel="stylesheet" type="text/css" href="mobile_hor_tablet_ver.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.js"></script>
+  </head>
+  <body>
+    <style>
+      .error_gif {
+        position: absolute;
+        left: 50%;
+        top: 35%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .error_text {
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 60%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "SansSerifFLF Demibold";
+        text-align: center;
+        font-size: 1.8rem;
+      }
+
+      @media only screen and (max-width: 500px) {
+        .error_text {
+          font-size: 1.4rem;
+        }
+        .error_gif {
+          top: 30%;
+          padding-bottom: 4vw;
+          width: 50%;
+          height: auto;
+        }
+      }
+
+      @media only screen and (min-width: 500px) and (max-width: 750px) {
+        .error_text {
+          font-size: 1.4rem;
+        }
+        .error_gif {
+          top: 25%;
+          padding-bottom: 4vw;
+          width: 20%;
+          height: auto;
+        }
+      }
+
+      @media only screen and (min-width: 751px) and (max-width: 1200px) {
+        .error_gif {
+          top: 37%;
+        }
+      }
+    </style>
+    <img class="error_gif" src="./Assets/ifError.gif" height="25%" />
+    <div class="error_text">
+      <p>oops! Looks like the page you are visiting doesn't exsit!</p>
+      <p>
+        You can visit my website
+        <a href="https://richardlee.live/" style="color: #a740ff;"
+          ><u>here</u></a
+        >
+      </p>
+      <p
+        style="
+          font-size: 1.5rem;
+          font-family: SansSerifBldFLF Medium;
+          word-spacing: -0.7vw;
+        "
+      >
+        <span style="color: #a740ff;">richardlee</span>
+        <span style="color: #ff55be;">.live</span>
+      </p>
+    </div>
+  </body>
+</html>

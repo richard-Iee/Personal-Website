@@ -6,6 +6,14 @@ function openSideBar() {
   document.getElementById("t_sidebar").style.top = "0%";
 }
 
+function m_openSideBar() {
+  document.getElementById("m_topBar").style.top = "0%";
+}
+
+function m_closeSideBar() {
+  document.getElementById("m_topBar").style.top = "-66.4%";
+}
+
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {

@@ -1,22 +1,560 @@
-.m_gif {
+.m_s1 {
+  background-color: aquamarine;
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.s2 {
+  /* height: 781.25vw; */
+  scroll-snap-align: start;
+  margin-left: 16.825%;
+  margin-right: 16.825%;
+  margin-bottom: 10vw;
+  color: #212121;
+  font-family: "SansSerifFLF Demibold";
+}
+
+.s3 {
+  height: 100vh;
+  scroll-snap-align: start;
+  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 35%;
+  -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+}
+
+.m_topBar {
+  position: fixed;
+  z-index: 2;
+  top: -66.4%;
+  height: 66.4%;
+  width: 100%;
+  background-color: #2a3344;
+  transition: 0.5s ease-in-out;
+}
+
+.m_fixedHam {
   position: absolute;
-  left: 50%;
-  top: 39%;
-  transform: translate(-50%, -50%);
+  top: 3%;
+  right: 5%;
+  z-index: 1;
+}
+
+.m_close {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  z-index: 1;
+}
+
+.m_topPic {
+  flex: 0.8;
+  background-image: url("./Assets/2.JPG");
+  background-size: 180%;
+  background-position: center;
+}
+
+.m_botPic {
+  flex: 0.2;
+  background-color: #ededed;
+}
+
+.m_topGradient {
+  position: relative;
+  top: 0%;
+  width: 100%;
+  height: 30%;
+  background-image: linear-gradient(
+    180deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(97, 97, 97, 0.01) 100%
+  );
+}
+
+.m_botGradient {
+  position: relative;
+  top: 30%;
+  width: 100%;
+  height: 40%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(50, 50, 50, 1) 0%,
+    rgba(97, 97, 97, 0.01) 100%
+  );
+}
+
+.m_botMes {
+  font-size: 5vw;
+  font-family: "SansSerifFLF Demibold";
+  text-align: justify;
+  margin: 4% 7% 0px 7%;
+  letter-spacing: 0.29px;
+  line-height: 7.8vw;
+}
+
+.m_myLink {
+  position: absolute;
+  top: 44.3%;
+  left: 7%;
+  font-size: 5vw;
+  letter-spacing: 0.5px;
+  font-family: "SansSerifBldFLF Medium";
+  color: white;
+  z-index: 1;
+  color: #a740ff;
+}
+
+.m_myName {
+  position: absolute;
+  font-size: 10vw;
+  top: 48%;
+  left: 6.6%;
+  white-space: nowrap;
+  font-family: "SansSerifBldFLF Medium";
+  color: white;
+}
+
+.m_myQuote {
+  position: absolute;
+  font-size: 4.5vw;
+  top: 56.2%;
+  left: 7%;
+  white-space: nowrap;
+  font-family: "SansSerifBldFLF Medium";
+  color: white;
+}
+
+.m_myMajor {
+  position: absolute;
+  font-size: 4.5vw;
+  top: 61%;
+  left: 7%;
+  white-space: nowrap;
+  font-family: "SansSerifFLF Demibold";
+  color: white;
+}
+
+.m_cvButton {
+  height: 13%;
+  width: 70%;
+  margin: 4% auto 1%;
+  background-color: #2a3344;
+  -webkit-box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
+  box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.m_text {
-  position: absolute;
-  left: 50%;
-  top: 56%;
-  transform: translate(-50%, -50%);
+.m_catUp {
+  padding-top: 4.5vw;
+  color: white;
+  font-size: 5vw;
+  font-family: "SansSerifFLF Demibold";
+}
+
+.padTop {
+  width: 100%;
+  height: 1%;
+}
+
+.s2 p {
+  /* position: relative; */
+  /* top: 1.04%; */
+  font-size: 2vw;
+}
+
+.breakLine {
+  height: 0vw;
+  width: 100%;
+  border-bottom: 1.5px solid #212121;
+}
+
+.belowBr {
+  height: 3vw;
+  width: 100%;
+}
+
+.bothSides {
+  width: 100%;
+  height: 2.4vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bothSidesLeft {
+  height: 100%;
+}
+
+.bothSidesRight {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "SansSerifFLF Demibold";
+}
+
+.pButton {
+  height: 2.5vw;
+  width: 17.9%;
+  background-color: khaki;
+  display: flex;
+  margin-top: 2vw;
+}
+
+.pButtonText {
+  height: 100%;
+  flex: 0.75;
+  background: rgb(54, 0, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 0, 114, 1) 0%,
+    rgba(66, 0, 75, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1vw;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  padding-top: 0.2vw;
+}
+
+.pButtonimage {
+  height: 100%;
+  flex: 0.25;
+  background-color: #33a1ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appPic {
+  margin-top: 4vw;
+  height: 35vw;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.picBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.pGPic {
+  margin-top: 2.5vw;
+  width: 100%;
+  height: 41vw;
+  background-image: url("./Assets/UoA-PG-2019Logo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.schoolLogo {
+  width: 15vw;
+  height: 5vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Javascript {
+  margin-top: 1vw;
+  height: 5px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes animation {
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+#Javascript.animate {
+  animation: animation 1s forwards;
+}
+
+.Python {
+  margin-top: 1vw;
+  height: 5px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes Python {
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+
+#Python.animate {
+  animation: Python 1s forwards;
+}
+
+.Typescript {
+  margin-top: 1vw;
+  height: 5px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes Typescript {
+  100% {
+    opacity: 1;
+    width: 25%;
+  }
+}
+
+#Typescript.animate {
+  animation: Typescript 1s forwards;
+}
+
+.React {
+  margin-top: 1vw;
+  height: 5px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes React {
+  100% {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+#React.animate {
+  animation: React 1s forwards;
+}
+
+.Adobe {
+  margin-top: 1vw;
+  height: 5px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes Adobe {
+  100% {
+    opacity: 1;
+    width: 75%;
+  }
+}
+
+#Adobe.animate {
+  animation: Adobe 1s forwards;
+}
+
+.AWS {
+  margin-top: 1vw;
+  height: 5px;
+  background-color: #ff3333;
+  opacity: 0.5;
+  width: 0%;
+}
+
+@keyframes AWS {
+  100% {
+    opacity: 1;
+    width: 12.5%;
+  }
+}
+
+#AWS.animate {
+  animation: AWS 1s forwards;
+}
+
+.conMes {
+  font-family: "SansSerifBldFLF Medium";
+  color: white;
   font-size: 6vw;
-  text-align: justify;
+  width: 30%;
+  position: relative;
+  top: 7vw;
+  left: 7.2vw;
+  line-height: 7vw;
+}
+
+.contactList {
+  position: absolute;
+  width: 16vw;
+  height: 2.5vw;
+  position: relative;
+  top: 27vh;
+  /* top: 17vw; */
+  left: 7.2vw;
+  display: flex;
+}
+
+.viewRes {
+  border-width: 0.1vw;
+  border-style: solid;
+  border-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  font-size: 1vw;
+  padding-top: 0.15vw;
+  text-decoration: none;
+}
+
+.viewRes:hover {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.bottomMessage {
+  position: absolute;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  font-size: 1vw;
+  position: relative;
+  left: 7.2vw;
+  top: 29vh;
+  letter-spacing: 0.06vw;
+}
+
+.contactInfo {
+  position: absolute;
+  top: 43vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.rightBottom {
+  position: relative;
+  left: 50%;
+  top: -22.5vw;
+}
+
+.inputName {
+  width: 22vw;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  font-size: 1.1vw;
+  letter-spacing: 0.05vw;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.gapBetweenInputLine {
+  height: 0.3vw;
+  width: 22vw;
+}
+
+.inputLine {
+  width: 22vw;
+  height: 0.05vw;
+  margin-left: -0.2vw;
+  background-color: white;
+}
+
+.message {
+  background: transparent;
+  border: 0 none;
+  resize: none;
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  font-size: 1.1vw;
+  outline: none;
+}
+
+.submitButton {
+  height: 2.4vw;
+  width: 9vw;
+  border-radius: 20vw;
+  border: 0 none;
+  background-color: #f2c477;
+  color: #212121;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 1vw;
+  padding-top: 0.23vw;
+}
+
+.submitButton:hover {
+  background-color: #e7b867;
+}
+
+.submitButton:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.bottomLink {
+  color: white;
+  font-family: "SansSerifBldFLF Medium";
+  font-size: 1.1vw;
+  letter-spacing: 0.05vw;
+}
+
+.bottomEles {
+  color: white;
+  font-family: "SansSerifBookFLF Medium";
+  font-size: 1vw;
+  letter-spacing: 0.05vw;
+}
+
+.bottomEles:hover {
+  color: white;
+}
+
+.dimond {
+  margin-right: 3vw;
+  position: relative;
+  top: -17.5vw;
+  left: 7.55vw;
+  height: 1.3vw;
+  width: 1.3vw;
+  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wave {
+  margin-right: 3vw;
+  position: relative;
+  top: -9.5vw;
+  left: 7.55vw;
+  height: 1.1vw;
+  width: 6vw;
+  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/wave.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }

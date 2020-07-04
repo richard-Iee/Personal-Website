@@ -8,10 +8,12 @@ function openSideBar() {
 
 function m_openSideBar() {
   document.getElementById("m_topBar").style.top = "0%";
+  document.getElementById("m_topBar").style.opacity = 1;
 }
 
 function m_closeSideBar() {
-  document.getElementById("m_topBar").style.top = "-66.4%";
+  document.getElementById("m_topBar").style.top = "-75%";
+  document.getElementById("m_topBar").style.opacity = 0;
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -104,6 +106,48 @@ $(document).ready(function () {
       isVisible = top > $("#t_AWS").offset().top;
 
     $("#t_AWS").toggleClass("animate", isVisible);
+  });
+
+  $(window).on("scroll", function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+      isVisible = top > $("#m_Javascript").offset().top;
+
+    $("#m_Javascript").toggleClass("animate", isVisible);
+  });
+
+  $(window).on("scroll", function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+      isVisible = top > $("#m_Python").offset().top;
+
+    $("#m_Python").toggleClass("animate", isVisible);
+  });
+
+  $(window).on("scroll", function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+      isVisible = top > $("#m_Typescript").offset().top;
+
+    $("#m_Typescript").toggleClass("animate", isVisible);
+  });
+
+  $(window).on("scroll", function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+      isVisible = top > $("#m_React").offset().top;
+
+    $("#m_React").toggleClass("animate", isVisible);
+  });
+
+  $(window).on("scroll", function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+      isVisible = top > $("#m_Adobe").offset().top;
+
+    $("#m_Adobe").toggleClass("animate", isVisible);
+  });
+
+  $(window).on("scroll", function (e) {
+    var top = $(window).scrollTop() + $(window).height(),
+      isVisible = top > $("#m_AWS").offset().top;
+
+    $("#m_AWS").toggleClass("animate", isVisible);
   });
 
   $(window).scroll(function () {
@@ -218,6 +262,10 @@ $(document).ready(function () {
   });
 
   $("#t_catchUp").click(function () {
+    $("html, body").animate({ scrollTop: $(document).height() }, 100);
+  });
+
+  $("#m_catchUp").click(function () {
     $("html, body").animate({ scrollTop: $(document).height() }, 100);
   });
 });

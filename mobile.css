@@ -1,28 +1,23 @@
 .m_s1 {
-  background-color: aquamarine;
   height: 100vh;
-  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
 }
 
-.s2 {
-  /* height: 781.25vw; */
-  scroll-snap-align: start;
-  margin-left: 16.825%;
-  margin-right: 16.825%;
+.m_s2 {
+  margin-left: 5%;
+  margin-right: 5%;
   margin-bottom: 10vw;
   color: #212121;
   font-family: "SansSerifFLF Demibold";
 }
 
-.s3 {
-  height: 100vh;
-  scroll-snap-align: start;
+.m_s3 {
+  height: 220vh;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 35%;
+  background-position: 70% 0%;
   -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
@@ -31,11 +26,12 @@
 .m_topBar {
   position: fixed;
   z-index: 2;
-  top: -66.4%;
-  height: 66.4%;
+  top: -75%;
+  height: 75%;
   width: 100%;
   background-color: #2a3344;
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
 }
 
 .m_fixedHam {
@@ -112,7 +108,7 @@
 .m_myName {
   position: absolute;
   font-size: 10vw;
-  top: 48%;
+  top: 46%;
   left: 6.6%;
   white-space: nowrap;
   font-family: "SansSerifBldFLF Medium";
@@ -122,7 +118,7 @@
 .m_myQuote {
   position: absolute;
   font-size: 4.5vw;
-  top: 56.2%;
+  top: 54.7%;
   left: 7%;
   white-space: nowrap;
   font-family: "SansSerifBldFLF Medium";
@@ -132,7 +128,7 @@
 .m_myMajor {
   position: absolute;
   font-size: 4.5vw;
-  top: 61%;
+  top: 60.2%;
   left: 7%;
   white-space: nowrap;
   font-family: "SansSerifFLF Demibold";
@@ -141,7 +137,7 @@
 
 .m_cvButton {
   height: 13%;
-  width: 70%;
+  width: 90%;
   margin: 4% auto 1%;
   background-color: #2a3344;
   -webkit-box-shadow: 11px 10px 12px -8px rgba(173, 173, 173, 1);
@@ -159,29 +155,29 @@
   font-family: "SansSerifFLF Demibold";
 }
 
-.padTop {
+.m_padTop {
   width: 100%;
   height: 1%;
 }
 
-.s2 p {
+.m_s2 p {
   /* position: relative; */
   /* top: 1.04%; */
-  font-size: 2vw;
+  font-size: 7vw;
 }
 
-.breakLine {
+.m_breakLine {
   height: 0vw;
   width: 100%;
   border-bottom: 1.5px solid #212121;
 }
 
-.belowBr {
-  height: 3vw;
+.m_belowBr {
+  height: 5vw;
   width: 100%;
 }
 
-.bothSides {
+.m_bothSides {
   width: 100%;
   height: 2.4vw;
   display: flex;
@@ -190,7 +186,7 @@
   justify-content: space-between;
 }
 
-.bothSidesLeft {
+/* .bothSidesLeft {
   height: 100%;
 }
 
@@ -199,17 +195,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+
+.m_info {
+  padding-top: 0.7vw;
+  font-size: 5vw;
+  width: 100%;
+  padding-left: 4vw;
+  text-indent: -4vw;
+  text-align: justify;
 }
 
-.pButton {
-  height: 2.5vw;
-  width: 17.9%;
+.m_pButton {
+  height: 15vw;
+  width: 100%;
   background-color: khaki;
   display: flex;
-  margin-top: 2vw;
+  margin: 7vw auto;
 }
 
-.pButtonText {
+.m_pButtonText {
   height: 100%;
   flex: 0.75;
   background: rgb(54, 0, 114);
@@ -221,13 +226,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1vw;
+  font-size: 5vw;
   color: white;
-  font-family: "SansSerifBookFLF Medium";
+  font-family: "SansSerifFLF Demibold";
   padding-top: 0.2vw;
 }
 
-.pButtonimage {
+.m_pButtonimage {
   height: 100%;
   flex: 0.25;
   background-color: #33a1ff;
@@ -236,39 +241,43 @@
   justify-content: center;
 }
 
-.appPic {
-  margin-top: 4vw;
-  height: 35vw;
+.m_appPic {
+  scroll-snap-type: x mandatory;
+  margin-top: 7vw;
   width: 100%;
+  height: 520px;
   display: flex;
-  flex-direction: row;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 auto;
+}
+.m_picBox {
+  width: 80%;
+  flex-shrink: 0;
+  height: 100%;
 }
 
-.picBox {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.pGPic {
+.m_pGPic {
   margin-top: 2.5vw;
   width: 100%;
-  height: 41vw;
+  height: 170vw;
   background-image: url("./Assets/UoA-PG-2019Logo.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 46%;
 }
 
-.schoolLogo {
-  width: 15vw;
-  height: 5vw;
+.m_schoolLogo {
+  width: 60vw;
+  height: 20vw;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 3vw;
 }
 
-.Javascript {
+.m_Javascript {
   margin-top: 1vw;
-  height: 5px;
+  height: 3px;
   background-color: #ff3333;
   opacity: 0.5;
   width: 0%;
@@ -281,13 +290,13 @@
   }
 }
 
-#Javascript.animate {
+#m_Javascript.animate {
   animation: animation 1s forwards;
 }
 
-.Python {
+.m_Python {
   margin-top: 1vw;
-  height: 5px;
+  height: 3px;
   background-color: #ff3333;
   opacity: 0.5;
   width: 0%;
@@ -300,13 +309,13 @@
   }
 }
 
-#Python.animate {
+#m_Python.animate {
   animation: Python 1s forwards;
 }
 
-.Typescript {
+.m_Typescript {
   margin-top: 1vw;
-  height: 5px;
+  height: 3px;
   background-color: #ff3333;
   opacity: 0.5;
   width: 0%;
@@ -319,13 +328,13 @@
   }
 }
 
-#Typescript.animate {
+#m_Typescript.animate {
   animation: Typescript 1s forwards;
 }
 
-.React {
+.m_React {
   margin-top: 1vw;
-  height: 5px;
+  height: 3px;
   background-color: #ff3333;
   opacity: 0.5;
   width: 0%;
@@ -338,13 +347,13 @@
   }
 }
 
-#React.animate {
+#m_React.animate {
   animation: React 1s forwards;
 }
 
-.Adobe {
+.m_Adobe {
   margin-top: 1vw;
-  height: 5px;
+  height: 3px;
   background-color: #ff3333;
   opacity: 0.5;
   width: 0%;
@@ -357,13 +366,13 @@
   }
 }
 
-#Adobe.animate {
+#m_Adobe.animate {
   animation: Adobe 1s forwards;
 }
 
-.AWS {
+.m_AWS {
   margin-top: 1vw;
-  height: 5px;
+  height: 3px;
   background-color: #ff3333;
   opacity: 0.5;
   width: 0%;
@@ -376,51 +385,51 @@
   }
 }
 
-#AWS.animate {
+#m_AWS.animate {
   animation: AWS 1s forwards;
 }
 
-.conMes {
+.m_conMes {
   font-family: "SansSerifBldFLF Medium";
   color: white;
-  font-size: 6vw;
-  width: 30%;
+  font-size: 18vw;
+  width: 80%;
   position: relative;
-  top: 7vw;
+  top: 17vw;
   left: 7.2vw;
-  line-height: 7vw;
+  line-height: 22vw;
 }
 
-.contactList {
-  position: absolute;
-  width: 16vw;
-  height: 2.5vw;
-  position: relative;
-  top: 27vh;
-  /* top: 17vw; */
-  left: 7.2vw;
+.m_contactList {
+  margin-top: 8vw;
+  width: 100%;
+  height: 13.5vw;
   display: flex;
+  justify-content: space-between;
 }
 
-.viewRes {
-  border-width: 0.1vw;
+.m_viewRes {
+  border-width: 0.6vw;
   border-style: solid;
   border-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  font-family: "SansSerifBookFLF Medium";
-  font-size: 1vw;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 5vw;
   padding-top: 0.15vw;
   text-decoration: none;
 }
 
-.viewRes:hover {
+.m_viewRes:hover {
   text-decoration: none;
-  color: black;
-  background-color: white;
-  transition: 0.3s;
+  color: white;
+}
+
+.m_viewRes:visited {
+  text-decoration: none;
+  color: white;
 }
 
 .bottomMessage {
@@ -441,18 +450,19 @@
   flex-direction: row;
 }
 
-.rightBottom {
-  position: relative;
-  left: 50%;
-  top: -22.5vw;
+.m_rightBottom {
+  width: 87%;
+  height: 100px;
+  margin: 0 auto;
 }
 
-.inputName {
-  width: 22vw;
+.m_inputName {
+  width: 100%;
   color: white;
-  font-family: "SansSerifBookFLF Medium";
-  font-size: 1.1vw;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 5vw;
   letter-spacing: 0.05vw;
+  margin-top: 15vw;
   background-color: rgba(0, 0, 0, 0);
   border: none;
   outline: none;
@@ -474,47 +484,62 @@
   color: white;
 }
 
-.gapBetweenInputLine {
-  height: 0.3vw;
-  width: 22vw;
+.m_gapBetweenInputLine {
+  height: 0vw;
+  width: 100%;
 }
 
-.inputLine {
-  width: 22vw;
-  height: 0.05vw;
-  margin-left: -0.2vw;
+.m_inputLine {
+  width: 100%;
+  height: 0.3vw;
+  margin-left: 0vw;
   background-color: white;
 }
 
-.message {
+.m_message {
+  width: 100%;
   background: transparent;
   border: 0 none;
   resize: none;
   color: white;
-  font-family: "SansSerifBookFLF Medium";
-  font-size: 1.1vw;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 4.5vw;
   outline: none;
 }
 
-.submitButton {
-  height: 2.4vw;
-  width: 9vw;
+.m_submitButton {
+  height: 12vw;
+  width: 100%;
   border-radius: 20vw;
   border: 0 none;
   background-color: #f2c477;
   color: #212121;
   font-family: "SansSerifFLF Demibold";
-  font-size: 1vw;
+  font-size: 6vw;
   padding-top: 0.23vw;
 }
 
-.submitButton:hover {
+.m_submitButton:hover {
   background-color: #e7b867;
 }
 
-.submitButton:focus {
+.m_submitButton:focus {
   outline: none;
   box-shadow: none;
+}
+
+.m_botCont {
+  padding-top: 10vw;
+  color: white;
+  font-size: 6vw;
+  font-family: "SansSerifBldFLF Medium";
+}
+
+.m_botContInfo {
+  padding-top: 4vw;
+  color: white;
+  font-size: 5vw;
+  font-family: "SansSerifFLF Demibold";
 }
 
 .bottomLink {
@@ -535,25 +560,25 @@
   color: white;
 }
 
-.dimond {
-  margin-right: 3vw;
+.m_dimond {
+  margin-right: 6vw;
   position: relative;
-  top: -17.5vw;
-  left: 7.55vw;
-  height: 1.3vw;
-  width: 1.3vw;
+  top: -61vw;
+  left: 7.7vw;
+  height: 4vw;
+  width: 4vw;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.wave {
+.m_wave {
   margin-right: 3vw;
   position: relative;
-  top: -9.5vw;
+  top: -36vw;
   left: 7.55vw;
-  height: 1.1vw;
-  width: 6vw;
+  height: 4vw;
+  width: 22vw;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/wave.png");
   background-repeat: no-repeat;
   background-size: cover;

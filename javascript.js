@@ -284,8 +284,4 @@ $(document).ready(function () {
   $("#t_catchUp").click(function () {
     $("html, body").animate({ scrollTop: $(document).height() }, 100);
   });
-
-  $("#m_catchUp").click(function () {
-    $("html, body").animate({ scrollTop: $(document).height() }, 100);
-  });
 });

@@ -43,8 +43,24 @@
 
   <body>
     <!-- Mobile start here -->
-    <div class="d-block d-sm-none" style="overflow-x: hidden;">
+    <div class="d-block d-sm-none m_mobile">
       <!-- Mobile start here -->
+      <div class="m_BackToTopAndMenu">
+        <a class="m_FixedBarMenu" onclick="m_openSideBar()" id="m_hideMenu">
+          <i
+            class="fa fa-bars"
+            style="font-size: 6vw; color: white;"
+            aria-hidden="true"
+          ></i>
+        </a>
+        <a class="m_FixedBarBackToTop" id="m_backToTop">
+          <i
+            class="fa fa-chevron-up"
+            style="font-size: 6vw; color: #fff;"
+            aria-hidden="true"
+          ></i>
+        </a>
+      </div>
       <div class="m_topBar" id="m_topBar" onclick="m_closeSideBar()">
         <div class="m_close">
           <i
@@ -52,6 +68,62 @@
             style="font-size: 6vw; color: white;"
             aria-hidden="true"
           ></i>
+        </div>
+        <div style="margin: 0 auto; width: 83%;">
+          <div
+            class="m_topBarLinks"
+            style="font-family: SansSerifBldFLF Medium;"
+          >
+            <span style="color: #a740ff;">richardlee</span
+            ><span style="color: #ff55be;">.live</span>
+          </div>
+          <div class="m_topBarLinks" style="padding-top: 10vw;">
+            <a href="#m_jumpOne" style="color: white; text-decoration: none;"
+              >HOME</a
+            >
+          </div>
+          <div class="m_topBarLinks" style="top: 30%;">
+            <a href="#m_jumpTwo" style="color: white; text-decoration: none;"
+              >INTERN & PROJECTS</a
+            >
+          </div>
+          <div class="m_topBarLinks" style="top: 40%;">
+            <a href="#m_jumpThree" style="color: white; text-decoration: none;"
+              >VOLUNTEERING & EMPLOYMENTS</a
+            >
+          </div>
+          <div class="m_topBarLinks" style="top: 50%;">
+            <a href="#m_jumpFour" style="color: white; text-decoration: none;"
+              >HOBBIES & CONTACT</a
+            >
+          </div>
+        </div>
+        <a
+          href="./Assets/downableMaterial/Resume.pdf#zoom=30"
+          target="_blank"
+          class="m_botCV"
+          style="text-decoration: none;"
+          >View My CV</a
+        >
+        <div class="m_botContact">
+          <a
+            href="https://www.linkedin.com/in/richard875/"
+            target="_blank"
+            class="m_bCLeft"
+          >
+            <i
+              class="fab fa-linkedin"
+              style="font-size: 9vw; color: white;"
+            ></i>
+          </a>
+          <a
+            href="https://github.com/richard875/Motorsport-Club"
+            target="_blank"
+            class="m_bCRight"
+            style="text-decoration: none;"
+          >
+            <i class="fab fa-github" style="font-size: 9vw; color: white;"></i>
+          </a>
         </div>
       </div>
       <section class="m_s1">
@@ -175,7 +247,7 @@
         >
           • Link (Not yet published):&nbsp;
           <a
-            style="color: #a740ff;"
+            style="color: #a740ff; text-decoration: none;"
             href="https://www.velocity.auckland.ac.nz/"
             target="_blank"
             >velocity.auckland.ac.nz&nbsp;<i
@@ -777,27 +849,27 @@
         <p style="padding-top: 6vw;">Education</p>
         <div class="m_breakLine"></div>
         <div class="m_belowBr"></div>
-        <p style="font-size: 6vw; color: #212121;">
+        <p style="font-size: 5vw; color: #212121;">
           Javascript — 1 year
         </p>
         <div class="m_Javascript" id="m_Javascript"></div>
-        <p style="font-size: 6vw; color: #212121; padding-top: 5vw;">
+        <p style="font-size: 5vw; color: #212121; padding-top: 5vw;">
           Python — 1.5 year
         </p>
         <div class="m_Python" id="m_Python"></div>
-        <p style="font-size: 6vw; color: #212121; padding-top: 5vw;">
+        <p style="font-size: 5vw; color: #212121; padding-top: 5vw;">
           Typescript — six months
         </p>
         <div class="m_Typescript" id="m_Typescript"></div>
-        <p style="font-size: 6vw; color: #212121; padding-top: 5vw;">
+        <p style="font-size: 5vw; color: #212121; padding-top: 5vw;">
           React and React Native — 1 year
         </p>
         <div class="m_React" id="m_React"></div>
-        <p style="font-size: 6vw; color: #212121; padding-top: 5vw;">
+        <p style="font-size: 5vw; color: #212121; padding-top: 5vw;">
           Adobe XD — 1.5 year
         </p>
         <div class="m_Adobe" id="m_Adobe"></div>
-        <p style="font-size: 6vw; color: #212121; padding-top: 5vw;">
+        <p style="font-size: 5vw; color: #212121; padding-top: 5vw;">
           AWS — three months
         </p>
         <div class="m_AWS" id="m_AWS"></div>
@@ -949,18 +1021,24 @@
 
           <p class="m_botCont">richardlee.live</p>
           <div class="m_botContInfo">
-            <a href="#m_jumpOne" style="color: white;">Home</a>
+            <a href="#m_jumpOne" style="color: white; text-decoration: none;"
+              >Home</a
+            >
           </div>
           <div class="m_botContInfo">
-            <a href="#m_jumpTwo" style="color: white;">Intern & Projects</a>
+            <a href="#m_jumpTwo" style="color: white; text-decoration: none;"
+              >Intern & Projects</a
+            >
           </div>
           <div class="m_botContInfo">
-            <a href="#m_jumpThree" style="color: white;"
+            <a href="#m_jumpThree" style="color: white; text-decoration: none;"
               >Volunteering & Employments</a
             >
           </div>
           <div class="m_botContInfo">
-            <a href="#m_jumpFour" style="color: white;">Hobbies & contact</a>
+            <a href="#m_jumpFour" style="color: white; text-decoration: none;"
+              >Hobbies & contact</a
+            >
           </div>
 
           <div class="m_gapBetweenInputLine" style="height: 15vw;"></div>

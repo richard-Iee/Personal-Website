@@ -1,3 +1,8 @@
+.m_mobile {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .m_s1 {
   height: 100vh;
   display: flex;
@@ -17,17 +22,44 @@
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 70% 0%;
+  background-position: 75% 0%;
   -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
 }
 
+.m_BackToTopAndMenu {
+  position: fixed;
+  height: 30vw;
+  width: 15vw;
+  right: 0vw;
+  bottom: 0vw;
+  z-index: 5;
+}
+
+.m_FixedBarMenu {
+  width: 100%;
+  height: 15vw;
+  background-color: #212121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m_FixedBarBackToTop {
+  width: 100%;
+  height: 15vw;
+  background-color: #ff2121;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .m_topBar {
   position: fixed;
   z-index: 2;
-  top: -75%;
-  height: 75%;
+  top: -135vw;
+  height: 135vw;
   width: 100%;
   background-color: #2a3344;
   transition: 0.4s ease-in-out;
@@ -41,11 +73,64 @@
   z-index: 1;
 }
 
+.m_topBarLinks {
+  font-size: 5.5vw;
+  font-family: "SansSerifFLF Demibold";
+  color: white;
+  z-index: 1;
+  padding-top: 9vw;
+}
+
 .m_close {
   position: absolute;
-  top: 5%;
-  right: 5%;
+  top: 9vw;
+  right: 8%;
   z-index: 1;
+}
+
+.m_botCV {
+  position: absolute;
+  bottom: 18vw;
+  height: 18vw;
+  width: 100%;
+  background: rgb(54, 0, 114);
+  background: linear-gradient(
+    90deg,
+    rgba(54, 0, 114, 1) 0%,
+    rgba(66, 0, 75, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "SansSerifFLF Demibold";
+  font-size: 5vw;
+}
+
+.m_botContact {
+  position: absolute;
+  bottom: 0vw;
+  height: 18vw;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.m_bCLeft {
+  flex: 0.5;
+  background-color: #0072b1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.m_bCRight {
+  flex: 0.5;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .m_topPic {
@@ -91,18 +176,6 @@
   margin: 4% 7% 0px 7%;
   letter-spacing: 0.29px;
   line-height: 7.8vw;
-}
-
-.m_myLink {
-  position: absolute;
-  top: 44.3%;
-  left: 7%;
-  font-size: 5vw;
-  letter-spacing: 0.5px;
-  font-family: "SansSerifBldFLF Medium";
-  color: white;
-  z-index: 1;
-  color: #a740ff;
 }
 
 .m_myName {
@@ -515,8 +588,8 @@
   background-color: #f2c477;
   color: #212121;
   font-family: "SansSerifFLF Demibold";
-  font-size: 6vw;
-  padding-top: 0.23vw;
+  font-size: 5vw;
+  padding-top: 0.25vw;
 }
 
 .m_submitButton:hover {
@@ -540,24 +613,6 @@
   color: white;
   font-size: 5vw;
   font-family: "SansSerifFLF Demibold";
-}
-
-.bottomLink {
-  color: white;
-  font-family: "SansSerifBldFLF Medium";
-  font-size: 1.1vw;
-  letter-spacing: 0.05vw;
-}
-
-.bottomEles {
-  color: white;
-  font-family: "SansSerifBookFLF Medium";
-  font-size: 1vw;
-  letter-spacing: 0.05vw;
-}
-
-.bottomEles:hover {
-  color: white;
 }
 
 .m_dimond {

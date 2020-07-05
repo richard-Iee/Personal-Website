@@ -1,9 +1,16 @@
 function closeTopBar() {
-  document.getElementById("t_sidebar").style.top = "-27%";
+  document.getElementById("t_sidebar").style.top = "-20vw";
+  document.getElementById("t_sidebar").style.opacity = 0;
 }
 
 function openSideBar() {
   document.getElementById("t_sidebar").style.top = "0%";
+  document.getElementById("t_sidebar").style.opacity = 1;
+}
+
+function m_closeSideBar() {
+  document.getElementById("m_topBar").style.top = "-135vw";
+  document.getElementById("m_topBar").style.opacity = 0;
 }
 
 function m_openSideBar() {
@@ -11,9 +18,35 @@ function m_openSideBar() {
   document.getElementById("m_topBar").style.opacity = 1;
 }
 
-function m_closeSideBar() {
-  document.getElementById("m_topBar").style.top = "-135vw";
-  document.getElementById("m_topBar").style.opacity = 0;
+var isMobile = {
+  Android: function () {
+    return navigator.userAgent.match(/Android/i);
+  },
+  BlackBerry: function () {
+    return navigator.userAgent.match(/BlackBerry/i);
+  },
+  iOS: function () {
+    return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+  },
+  Opera: function () {
+    return navigator.userAgent.match(/Opera Mini/i);
+  },
+  Windows: function () {
+    return navigator.userAgent.match(/IEMobile/i);
+  },
+  any: function () {
+    return (
+      isMobile.Android() ||
+      isMobile.BlackBerry() ||
+      isMobile.iOS() ||
+      isMobile.Opera() ||
+      isMobile.Windows()
+    );
+  },
+};
+/* if the device is not ios hide the download button */
+if (isMobile.iOS()) {
+  $(".m_FixedBarBackToTop").css("visibility", "hidden");
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -160,6 +193,22 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > $(document).height() * 0.05) {
+      $("#t_flexButtons").css("right", "0vw");
+    } else {
+      $("#t_flexButtons").css("right", "-5vw");
+    }
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > $(document).height() * 0.02) {
+      $("#m_BackToTopAndMenu").css("right", "0vw");
+    } else {
+      $("#m_BackToTopAndMenu").css("right", "-15vw");
+    }
+  });
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > $(document).height() * 0.05) {
       $("#t_backToTop").fadeIn();
     } else {
       $("#t_backToTop").fadeOut();
@@ -167,7 +216,7 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.05) {
+    if ($(this).scrollTop() > $(document).height() * 0.02) {
       $("#m_backToTop").fadeIn();
     } else {
       $("#m_backToTop").fadeOut();
@@ -175,7 +224,7 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.05) {
+    if ($(this).scrollTop() > $(document).height() * 0.02) {
       $("#m_hideMenu").fadeIn();
     } else {
       $("#m_hideMenu").fadeOut();

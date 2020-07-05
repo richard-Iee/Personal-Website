@@ -45,7 +45,7 @@
     <!-- Mobile start here -->
     <div class="d-block d-sm-none m_mobile">
       <!-- Mobile start here -->
-      <div class="m_BackToTopAndMenu">
+      <div class="m_BackToTopAndMenu" id="m_BackToTopAndMenu">
         <a class="m_FixedBarMenu" onclick="m_openSideBar()" id="m_hideMenu">
           <i
             class="fa fa-bars"
@@ -149,16 +149,23 @@
           </p>
         </div>
         <div class="m_botPic">
-          <p class="m_botMes">
-            I am a highly motivated and organised individual, whom demonstrates
-            the qualities of independent and critical thinking through my
-            university, work, and hobby life. With a strong attention to detail,
-            I consistently meet personal and school goals on time and to an
-            excellent standard.
-          </p>
-          <a class="m_cvButton" href="#m_catchUp" style="text-decoration: none;"
-            ><p class="m_catUp">Let’s catch up!</p></a
-          >
+          <div class="m_botMesCon">
+            <p class="m_botMes">
+              I am a highly motivated and organised individual, whom
+              demonstrates the qualities of independent and critical thinking
+              through my university, work, and hobby life. With a strong
+              attention to detail, I consistently meet personal and school goals
+              on time and to an excellent standard.
+            </p>
+          </div>
+          <div class="m_vCVB">
+            <a
+              class="m_cvButton"
+              href="#m_catchUp"
+              style="text-decoration: none;"
+              ><p class="m_catUp">Let’s catch up!</p></a
+            >
+          </div>
         </div>
       </section>
 
@@ -358,6 +365,7 @@
               background-image: url(./Assets/appPic1.png);
               background-size: cover;
               scroll-snap-align: start;
+              margin-right: 5vw;
             "
           ></div>
           <div
@@ -374,6 +382,7 @@
               background-image: url(./Assets/appPic3.png);
               background-size: cover;
               scroll-snap-align: end;
+              margin-left: 5vw;
             "
           ></div>
         </div>
@@ -1110,7 +1119,7 @@
         </div>
       </div>
 
-      <div class="t_flexButtons">
+      <div class="t_flexButtons" id="t_flexButtons">
         <a
           class="t_scrollMenu"
           id="t_scrollMenu"
@@ -2233,7 +2242,7 @@
           >
             <i
               class="fa fa-chevron-up"
-              style="position: absolute; font-size: 1.5vw; color: #fff;"
+              style="position: absolute; font-size: 1.4vw; color: #fff;"
             ></i>
           </div>
         </a>

@@ -512,24 +512,6 @@
   color: white;
 }
 
-.bottomMessage {
-  position: absolute;
-  color: white;
-  font-family: "SansSerifBookFLF Medium";
-  font-size: 1vw;
-  position: relative;
-  left: 7.2vw;
-  top: 29vh;
-  letter-spacing: 0.06vw;
-}
-
-.contactInfo {
-  position: absolute;
-  top: 43vh;
-  display: flex;
-  flex-direction: row;
-}
-
 .m_rightBottom {
   width: 87%;
   height: 100px;

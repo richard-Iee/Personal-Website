@@ -183,10 +183,12 @@
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 50% 35%;
+  background-position: 50% 0%;
   -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
 }
 
 .frontLeftPic {
@@ -229,7 +231,7 @@
   text-align: justify;
   margin: 2% 5% 0px 5%;
   letter-spacing: 0.29px;
-  line-height: 2vw;
+  line-height: 4.5vh;
 }
 
 .cvButton {
@@ -271,7 +273,7 @@
   height: 100%;
   width: 100%;
   border-style: solid;
-  border-width: 0.1vw;
+  border-width: 1re0.5;
   border-color: white;
   display: flex;
   align-items: center;
@@ -516,26 +518,31 @@
   animation: AWS 1s forwards;
 }
 
+.fliMesCon {
+  width: 70%;
+  height: 80%;
+  /* background-color: turquoise; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .conMes {
   font-family: "SansSerifBldFLF Medium";
   color: white;
   font-size: 6vw;
-  width: 30%;
-  position: relative;
-  top: 7vw;
-  left: 7.2vw;
+  width: 80%;
   line-height: 7vw;
+  padding-top: 1.5vh;
 }
 
 .contactList {
-  position: absolute;
+  /* position: relative; */
   width: 16vw;
   height: 2.5vw;
-  position: relative;
-  top: 27vh;
-  /* top: 17vw; */
-  left: 7.2vw;
+  /* top: 3vw; */
   display: flex;
+  margin-bottom: 1vw;
 }
 
 .viewRes {
@@ -560,19 +567,19 @@
 }
 
 .bottomMessage {
-  position: absolute;
+  /* position: absolute; */
   color: white;
   font-family: "SansSerifBookFLF Medium";
   font-size: 1vw;
-  position: relative;
-  left: 7.2vw;
-  top: 29vh;
+  /* position: relative; */
+  /* left: 7.2vw; */
+  /* top: 29vh; */
   letter-spacing: 0.06vw;
 }
 
 .contactInfo {
-  position: absolute;
-  top: 43vh;
+  /* position: absolute;
+  top: 43vh; */
   display: flex;
   flex-direction: row;
 }
@@ -672,25 +679,18 @@
 }
 
 .dimond {
-  margin-right: 3vw;
-  position: relative;
-  top: -17.5vw;
-  left: 7.55vw;
-  height: 1.3vw;
-  width: 1.3vw;
+  margin-left: 0.4vw;
+  margin-right: 2.6vw;
+  margin-bottom: 0.5vw;
+  height: 1.5rem;
+  width: 1.5rem;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .wave {
-  margin-right: 3vw;
   position: relative;
-  top: -9.5vw;
-  left: 7.55vw;
-  height: 1.1vw;
-  width: 6vw;
-  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/wave.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: -15vw;
+  left: 0.4vw;
 }

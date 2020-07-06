@@ -266,7 +266,7 @@ $(document).ready(function () {
   $(window).scroll(function () {
     if (
       $(this).scrollTop() > $(document).height() * 0.04 &&
-      $(this).scrollTop() < $(document).height() * 0.24
+      $(this).scrollTop() < $(document).height() * 0.22
     ) {
       $("#line2").fadeIn(200);
       $("#button2").css({ "background-color": "#2f3a4e" });
@@ -278,8 +278,8 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if (
-      $(this).scrollTop() > $(document).height() * 0.24 &&
-      $(this).scrollTop() < $(document).height() * 0.5
+      $(this).scrollTop() >= $(document).height() * 0.22 &&
+      $(this).scrollTop() < $(document).height() * 0.48
     ) {
       $("#line3").fadeIn(200);
       $("#button3").css({ "background-color": "#2f3a4e" });
@@ -290,7 +290,7 @@ $(document).ready(function () {
   });
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.5) {
+    if ($(this).scrollTop() >= $(document).height() * 0.48) {
       $("#line4").fadeIn(200);
       $("#button4").css({ "background-color": "#2f3a4e" });
     } else {

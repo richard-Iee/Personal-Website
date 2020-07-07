@@ -109,7 +109,7 @@
 
 .t_s1 {
   background-color: #ededed;
-  height: 100vh;
+  height: 65vw;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -126,7 +126,7 @@
 }
 
 .t_s3 {
-  height: 100vh;
+  height: 71.5vw;
   scroll-snap-align: start;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
@@ -135,6 +135,8 @@
   -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
 }
 
 .t_frontLeftPic {
@@ -143,7 +145,9 @@
   flex: 0.43;
   background-image: url("./Assets/BACKDROP_DESIGN_VECTOR_16/Ultra\ Violet\ Galactic\ Background\ Free\ Vector.jpg");
   background-size: auto 100%;
-  background-position: 85%;
+  background-position: 0%;
+  display: flex;
+  flex-direction: column;
 }
 
 .t_frontRightPic {
@@ -152,8 +156,6 @@
 }
 
 .t_myLink {
-  padding-left: 8%;
-  padding-top: 13%;
   font-size: 2.3vw;
   letter-spacing: 0.5px;
   font-family: "SansSerifBldFLF Medium";
@@ -215,11 +217,8 @@
 }
 
 .t_catchUp {
-  position: relative;
-  top: 45%;
-  left: 22%;
-  width: 55%;
-  height: 12%;
+  width: 45%;
+  height: 5vw;
   color: white;
 }
 
@@ -240,14 +239,14 @@
 
 .t_scrollDown {
   position: absolute;
-  left: 89%;
-  top: 65%;
+  right: 9vw;
+  top: 39vw;
 }
 
 .t_iconsFront {
-  position: relative;
+  /* position: relative;
   top: 53%;
-  left: 37%;
+  left: 37%; */
   word-spacing: 2.2vw;
 }
 
@@ -477,24 +476,18 @@
 }
 
 .t_conMes {
+  margin-top: 1.5rem;
   font-family: "SansSerifBldFLF Medium";
   color: white;
   font-size: 9vw;
-  width: 40%;
-  position: relative;
-  top: 7vw;
-  left: 7.2vw;
+  width: 100%;
   line-height: 10.5vw;
 }
 
 .t_contactList {
-  position: absolute;
+  margin-bottom: 2.5vh;
   width: 28vw;
   height: 4.5vw;
-  position: relative;
-  top: 15vw;
-  /* top: 17vw; */
-  left: 7.2vw;
   display: flex;
 }
 
@@ -518,13 +511,9 @@
 }
 
 .t_bottomMessage {
-  position: absolute;
   color: white;
   font-family: "SansSerifFLF Demibold";
   font-size: 2vw;
-  position: relative;
-  left: 7.2vw;
-  top: 18vw;
   letter-spacing: 0.01vw;
 }
 
@@ -601,8 +590,7 @@
 }
 
 .t_contactInfo {
-  position: absolute;
-  top: 62vh;
+  padding-bottom: 1.3rem;
 }
 
 .t_bottomEles {
@@ -617,10 +605,11 @@
 }
 
 .t_dimond {
-  margin-right: 3vw;
-  position: relative;
+  margin-left: 0.4vw;
+  margin-right: 2.6vw;
+  /* position: relative;
   top: -29vw;
-  left: 7.55vw;
+  left: 7.55vw; */
   height: 2vw;
   width: 2vw;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
@@ -629,13 +618,8 @@
 }
 
 .t_wave {
-  margin-right: 3vw;
+  margin-right: 0.4vw;
   position: relative;
-  top: -17.7vw;
-  left: 7.55vw;
-  height: 2vw;
-  width: 11vw;
-  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/wave.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  top: -23vw;
+  /* left: 7.55vw; */
 }

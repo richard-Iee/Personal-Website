@@ -334,3 +334,24 @@ $(document).ready(function () {
     $("html, body").animate({ scrollTop: $(document).height() }, 100);
   });
 });
+
+var base = "https://res.cloudinary.com/dhjfgdati/image/upload";
+var width = `${Math.round(
+  Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+)}`;
+
+//Head shot
+var param = `w_${Math.round(width * 0.8)},f_auto,q_auto,c_scale`;
+document.getElementById(
+  "desCarOne"
+).src = `${base}/${param}/v1596497723/cars1-min_idoz8m`;
+
+//project images
+// param = `w_${Math.round(width / 3)},f_auto,q_auto,c_scale`;
+// var projects = document.getElementsByClassName("project_pic");
+// var img_url = "";
+// for (var i = 0; i < projects.length; i++) {
+//   img_url = `${base}/${param}/${projects[i].id}`;
+//   console.log(projects[i]);
+//   projects[i].src = img_url;
+// }

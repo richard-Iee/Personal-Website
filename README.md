@@ -1,6 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a0453cdb-c3dd-4f26-9e9f-3667bb7455a8/deploy-status)](https://app.netlify.com/sites/richardleedev/deploys)
 
-### Come have a look: [richardlee.dev](https://richardlee.dev/)
+### Come have a look: <a href="https://richardlee.dev/" target="_blank">richardlee.dev</a>
 
 <br/>
 

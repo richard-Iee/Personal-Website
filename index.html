@@ -179,6 +179,9 @@
   </head>
 
   <body>
+    <script>
+      document.body.className = "fade";
+    </script>
     <!-- Small start here -->
     <div class="d-block d-sm-none m_mobile">
       <div class="m_BackToTopAndMenu" id="m_BackToTopAndMenu">
@@ -3725,5 +3728,10 @@
 
     <script type="text/javascript" src="./javascript.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (e) {
+        document.body.className = "";
+      });
+    </script>
   </body>
 </html>

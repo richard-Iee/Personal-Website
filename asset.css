@@ -6,8 +6,6 @@ html {
 
 body {
   height: 100%;
-  /* text-indent: -1vw; */
-  /* background-color: white; */
 }
 
 @font-face {
@@ -108,17 +106,3 @@ body {
   src: local("SansSerifExbFLFCond Italic"),
     url("./Fonts/SansSerifExbFLFCond-Italic.woff") format("woff");
 }
-
-/* @media (prefers-color-scheme: light) {
-    body {
-      background-color: green;
-      color: black;
-    }
-  }
-  
-  @media (prefers-color-scheme: dark) {
-    body {
-      background-color: black;
-      color: white;
-    }
-  } */

@@ -384,7 +384,7 @@ body.fade {
   top: 77%;
   right: 8%;
   cursor: pointer;
-  /* display: none; */
+  z-index: 39;
 }
 
 .frontLeftPic {

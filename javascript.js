@@ -64,57 +64,51 @@ window.onscroll = () => {
   var cars = $("#cars").offset().top;
   var contact = $("#contact").offset().top;
 
-  if (scrollPosition < internExperienceAndProjects - 1) {
-    $(".fa-user").fadeIn(200);
+  if (scrollPosition < internExperienceAndProjects) {
+    $(".fa-user").fadeIn();
   } else {
     $(".fa-user").css("display", "none");
   }
   if (
-    scrollPosition >= internExperienceAndProjects - 1 &&
+    scrollPosition >= internExperienceAndProjects &&
     scrollPosition < skills
   ) {
-    $(".fa-lightbulb").fadeIn(200);
+    $(".fa-lightbulb").fadeIn();
   } else {
     $(".fa-lightbulb").css("display", "none");
   }
-  if (scrollPosition >= skills - 1 && scrollPosition < volunteeringAndOthers) {
-    $(".fa-star").fadeIn(200);
+  if (scrollPosition >= skills && scrollPosition < volunteeringAndOthers) {
+    $(".fa-star").fadeIn();
   } else {
     $(".fa-star").css("display", "none");
   }
-  if (
-    scrollPosition >= volunteeringAndOthers - 1 &&
-    scrollPosition < employments
-  ) {
-    $(".fa-hands-helping").fadeIn(200);
+  if (scrollPosition >= volunteeringAndOthers && scrollPosition < employments) {
+    $(".fa-hands-helping").fadeIn();
   } else {
     $(".fa-hands-helping").css("display", "none");
   }
-  if (
-    scrollPosition >= employments - 1 &&
-    scrollPosition < personalStatements
-  ) {
-    $(".fa-building").fadeIn(200);
+  if (scrollPosition >= employments && scrollPosition < personalStatements) {
+    $(".fa-building").fadeIn();
   } else {
     $(".fa-building").css("display", "none");
   }
-  if (scrollPosition >= personalStatements - 1 && scrollPosition < education) {
-    $(".fa-info").fadeIn(200);
+  if (scrollPosition >= personalStatements && scrollPosition < education) {
+    $(".fa-info").fadeIn();
   } else {
     $(".fa-info").css("display", "none");
   }
-  if (scrollPosition >= education - 1 && scrollPosition < cars) {
-    $(".fa-university").fadeIn(200);
+  if (scrollPosition >= education && scrollPosition < cars) {
+    $(".fa-university").fadeIn();
   } else {
     $(".fa-university").css("display", "none");
   }
-  if (scrollPosition >= cars - 1 && scrollPosition < contact - 800) {
-    $(".fa-car").fadeIn(200);
+  if (scrollPosition >= cars && scrollPosition < contact - 800) {
+    $(".fa-car").fadeIn();
   } else {
     $(".fa-car").css("display", "none");
   }
   if (scrollPosition >= contact - 799) {
-    $(".special-envelope").fadeIn(200);
+    $(".special-envelope").fadeIn();
   } else {
     $(".special-envelope").css("display", "none");
   }

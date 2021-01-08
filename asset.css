@@ -3,9 +3,16 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
-
 body {
   height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+hr {
+  background: #212121;
 }
 
 @font-face {
@@ -105,4 +112,111 @@ body {
   font-weight: normal;
   src: local("SansSerifExbFLFCond Italic"),
     url("./Fonts/SansSerifExbFLFCond-Italic.woff") format("woff");
+}
+
+.sansSerifFLF-demibold {
+  font-family: "SansSerifFLF Demibold";
+}
+
+.sansSerifFLF-medium {
+  font-family: "SansSerifFLF Medium";
+}
+
+.sansSerifFLF-medium-italic {
+  font-family: "SansSerifFLF Medium Italic";
+}
+
+.sansSerifFLF-italic {
+  font-family: "SansSerifFLF Italic";
+}
+
+.sansSerifBldFLF-medium {
+  font-family: "SansSerifBldFLF Medium";
+}
+
+.sansSerifBldFLFCond-medium {
+  font-family: "SansSerifBldFLFCond Medium";
+}
+
+.sansSerifBookFLF-medium {
+  font-family: "SansSerifBookFLF Medium";
+}
+
+.sansSerifExbFLF-medium {
+  font-family: "SansSerifExbFLF Medium";
+}
+
+.sansSerifExbFLFCond-medium {
+  font-family: "SansSerifExbFLFCond Medium";
+}
+
+.sansSerifBldFLF-Italic-italic {
+  font-family: "SansSerifBldFLF-Italic Italic";
+}
+
+.sansSerifBldFLFCond-italic {
+  font-family: "SansSerifBldFLFCond Italic";
+}
+
+.sansSerifBookFLF-italic {
+  font-family: "SansSerifBookFLF Italic";
+}
+
+.sansSerifExbFLF-italic {
+  font-family: "SansSerifExbFLF Italic";
+}
+
+.sansSerifExbFLFCond-italic {
+  font-family: "SansSerifExbFLFCond Italic";
+}
+
+.white {
+  color: white;
+}
+.red {
+  color: #ff3333;
+}
+.purple {
+  color: #a740ff;
+}
+.dark-purple {
+  color: #80008c;
+}
+.dark-blue {
+  color: rgb(54, 0, 114);
+}
+
+.pink {
+  color: #ff55be;
+}
+.black {
+  color: #212121;
+}
+
+.h05vw {
+  height: 0.5vw;
+}
+
+.h06vw {
+  height: 0.6vw;
+}
+
+.h2vw {
+  height: 2vw !important;
+}
+
+.h3vw {
+  height: 3vw;
+}
+
+.w13vw {
+  width: 13vw !important;
+}
+
+.f09vw {
+  font-size: 0.9vw;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
 }

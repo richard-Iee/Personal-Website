@@ -1,24 +1,186 @@
-function closeTopBar() {
-  document.getElementById("t_sidebar").style.top = "-20vw";
-  document.getElementById("t_sidebar").style.opacity = 0;
+var myViewModel = {
+  personalIntroduction:
+    "I am a highly motivated and organised individual, who demonstrates \
+    the qualities of independent and critical thinking through my \
+    university, work, and hobby life. With a strong attention to detail, \
+    I consistently meet personal and school goals on time and to an \
+    excellent standard.",
+};
+
+ko.applyBindings(myViewModel);
+
+if ($(this).scrollTop() == 0) {
+  $(".fa-user").fadeIn(200);
+} else {
+  $(".fa-user").css("display", "none");
 }
 
-function openSideBar() {
-  document.getElementById("t_sidebar").style.top = "0%";
-  document.getElementById("t_sidebar").style.opacity = 1;
+var toHome = () => {
+  $("html, body").animate({ scrollTop: 0 }, 100);
+};
+
+var internExperienceAndProjects = () => {
+  $("html, body").animate(
+    { scrollTop: $("#internExperienceAndProjects").offset().top - 100 },
+    100
+  );
+};
+
+var volunteeringAndOthers = () => {
+  $("html, body").animate(
+    { scrollTop: $("#volunteeringAndOthers").offset().top - 100 },
+    100
+  );
+};
+
+var personalStatements = () => {
+  $("html, body").animate(
+    { scrollTop: $("#personalStatements").offset().top - 100 },
+    100
+  );
+};
+
+var toBottom = () => {
+  $("html, body").animate({ scrollTop: $(document).height() }, 100);
+};
+
+// When the user scrolls the page, execute function
+window.onscroll = () => {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("prograssOverlayBar").style.height = scrolled + "%";
+
+  var scrollPosition = $(this).scrollTop();
+  var internExperienceAndProjects = $("#internExperienceAndProjects").offset()
+    .top;
+  var skills = $("#skills").offset().top;
+  var volunteeringAndOthers = $("#volunteeringAndOthers").offset().top;
+  var employments = $("#employments").offset().top;
+  var personalStatements = $("#personalStatements").offset().top;
+  var education = $("#education").offset().top;
+  var cars = $("#cars").offset().top;
+  var contact = $("#contact").offset().top;
+
+  if (scrollPosition < internExperienceAndProjects - 1) {
+    $(".fa-user").fadeIn(200);
+  } else {
+    $(".fa-user").css("display", "none");
+  }
+  if (
+    scrollPosition >= internExperienceAndProjects - 1 &&
+    scrollPosition < skills
+  ) {
+    $(".fa-lightbulb").fadeIn(200);
+  } else {
+    $(".fa-lightbulb").css("display", "none");
+  }
+  if (scrollPosition >= skills - 1 && scrollPosition < volunteeringAndOthers) {
+    $(".fa-star").fadeIn(200);
+  } else {
+    $(".fa-star").css("display", "none");
+  }
+  if (
+    scrollPosition >= volunteeringAndOthers - 1 &&
+    scrollPosition < employments
+  ) {
+    $(".fa-hands-helping").fadeIn(200);
+  } else {
+    $(".fa-hands-helping").css("display", "none");
+  }
+  if (
+    scrollPosition >= employments - 1 &&
+    scrollPosition < personalStatements
+  ) {
+    $(".fa-building").fadeIn(200);
+  } else {
+    $(".fa-building").css("display", "none");
+  }
+  if (scrollPosition >= personalStatements - 1 && scrollPosition < education) {
+    $(".fa-info").fadeIn(200);
+  } else {
+    $(".fa-info").css("display", "none");
+  }
+  if (scrollPosition >= education - 1 && scrollPosition < cars) {
+    $(".fa-university").fadeIn(200);
+  } else {
+    $(".fa-university").css("display", "none");
+  }
+  if (scrollPosition >= cars - 1 && scrollPosition < contact - 800) {
+    $(".fa-car").fadeIn(200);
+  } else {
+    $(".fa-car").css("display", "none");
+  }
+  if (scrollPosition >= contact - 799) {
+    $(".special-envelope").fadeIn(200);
+  } else {
+    $(".special-envelope").css("display", "none");
+  }
+
+  if ($(this).scrollTop() > $(document).height() * 0.04) {
+    $(".backToTop").fadeIn();
+  } else {
+    $(".backToTop").fadeOut();
+  }
+
+  if (
+    $(this).scrollTop() > $(document).height() * 0.02 &&
+    $(this).scrollTop() < $(document).height() * 0.9
+  ) {
+    $(".toBottom").fadeIn();
+  } else {
+    $(".toBottom").fadeOut();
+  }
+
+  if ($(this).scrollTop() > $(document).height() * 0.04) {
+    $(".mobile-util-menu").css("right", "0vw");
+  } else {
+    $(".mobile-util-menu").css("right", "-15vw");
+  }
+
+  var top = $(window).scrollTop() + $(window).height(),
+    isVisible = top > $(".skill-set").offset().top;
+
+  $(".skill-set").toggleClass("animate", isVisible);
+};
+
+var starNumber = () => {
+  return 10 + Math.floor(Math.random() * Math.floor(30));
+};
+
+var starSpecs = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+};
+
+var starPosition = (max) => {
+  return Math.floor(Math.random() * Math.floor(max));
+};
+
+for (var i = 0; i <= starNumber(); i++) {
+  starDimensions = starSpecs(100, 500) / 1000;
+  starXPos = starPosition(500) / 10;
+  starYPos = starPosition(1000) / 10;
+  $(".frontLeftPic").prepend(
+    `<div class="stars blink d-none d-xl-flex" style="top: ${starYPos}%; left: ${starXPos}%; width: ${starDimensions}vw; height: ${starDimensions}vw"></div>`
+  );
 }
 
-function m_closeSideBar() {
-  document.getElementById("m_topBar").style.top = "-135vw";
-  document.getElementById("m_topBar").style.opacity = 0;
-}
+$(".scrollDown").click(function () {
+  $("html, body").animate(
+    { scrollTop: $("#internExperienceAndProjects").offset().top },
+    100
+  );
+});
 
-function m_openSideBar() {
-  document.getElementById("m_topBar").style.top = "0%";
-  document.getElementById("m_topBar").style.opacity = 1;
-}
+$(".catchUp").click(function () {
+  $("html, body").animate({ scrollTop: $(document).height() }, 100);
+});
 
-var isMobile = {
+var mobileDevice = {
   Android: function () {
     return navigator.userAgent.match(/Android/i);
   },
@@ -36,322 +198,16 @@ var isMobile = {
   },
   any: function () {
     return (
-      isMobile.Android() ||
-      isMobile.BlackBerry() ||
-      isMobile.iOS() ||
-      isMobile.Opera() ||
-      isMobile.Windows()
+      mobileDevice.Android() ||
+      mobileDevice.BlackBerry() ||
+      mobileDevice.iOS() ||
+      mobileDevice.Opera() ||
+      mobileDevice.Windows()
     );
   },
 };
+
 /* if the device is not ios hide the download button */
-if (isMobile.iOS()) {
-  $(".m_FixedBarBackToTop").css("visibility", "hidden");
+if (mobileDevice.iOS()) {
+  $(".mobile-back-to-top").css("visibility", "hidden");
 }
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-};
-
-$(document).ready(function () {
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#Javascript").offset().top;
-
-    $("#Javascript").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#Python").offset().top;
-
-    $("#Python").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#Typescript").offset().top;
-
-    $("#Typescript").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#React").offset().top;
-
-    $("#React").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#Adobe").offset().top;
-
-    $("#Adobe").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#AWS").offset().top;
-
-    $("#AWS").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#t_Javascript").offset().top;
-
-    $("#t_Javascript").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#t_Python").offset().top;
-
-    $("#t_Python").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#t_Typescript").offset().top;
-
-    $("#t_Typescript").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#t_React").offset().top;
-
-    $("#t_React").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#t_Adobe").offset().top;
-
-    $("#t_Adobe").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#t_AWS").offset().top;
-
-    $("#t_AWS").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#m_Javascript").offset().top;
-
-    $("#m_Javascript").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#m_Python").offset().top;
-
-    $("#m_Python").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#m_Typescript").offset().top;
-
-    $("#m_Typescript").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#m_React").offset().top;
-
-    $("#m_React").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#m_Adobe").offset().top;
-
-    $("#m_Adobe").toggleClass("animate", isVisible);
-  });
-
-  $(window).on("scroll", function (e) {
-    var top = $(window).scrollTop() + $(window).height(),
-      isVisible = top > $("#m_AWS").offset().top;
-
-    $("#m_AWS").toggleClass("animate", isVisible);
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.04) {
-      $("#backToTop").fadeIn();
-    } else {
-      $("#backToTop").fadeOut();
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.05) {
-      $("#t_flexButtons").css("right", "0vw");
-    } else {
-      $("#t_flexButtons").css("right", "-5vw");
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.02) {
-      $("#m_BackToTopAndMenu").css("right", "0vw");
-    } else {
-      $("#m_BackToTopAndMenu").css("right", "-15vw");
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.05) {
-      $("#t_backToTop").fadeIn();
-    } else {
-      $("#t_backToTop").fadeOut();
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.02) {
-      $("#m_backToTop").fadeIn();
-    } else {
-      $("#m_backToTop").fadeOut();
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.02) {
-      $("#m_hideMenu").fadeIn();
-    } else {
-      $("#m_hideMenu").fadeOut();
-    }
-  });
-
-  $(window).scroll(function () {
-    if (
-      $(this).scrollTop() < $(document).height() * 0.87 &&
-      $(this).scrollTop() > $(document).height() * 0.05
-    ) {
-      $("#toBottom").fadeIn();
-    } else {
-      $("#toBottom").fadeOut();
-    }
-  });
-
-  $(window).scroll(function () {
-    if (
-      $(this).scrollTop() < $(document).height() * 0.87 &&
-      $(this).scrollTop() > $(document).height() * 0.05
-    ) {
-      $("#t_toBottom").fadeIn();
-    } else {
-      $("#t_toBottom").fadeOut();
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() < $(document).height() * 0.04) {
-      $("#line1").fadeIn(200);
-      $("#button1").css({ "background-color": "#2f3a4e" });
-    } else {
-      $("#line1").fadeOut(200);
-      $("#button1").css({ "background-color": "#2a3344", transition: "0.2s" });
-    }
-  });
-
-  $(window).scroll(function () {
-    if (
-      $(this).scrollTop() > $(document).height() * 0.04 &&
-      $(this).scrollTop() < $(document).height() * 0.22
-    ) {
-      $("#line2").fadeIn(200);
-      $("#button2").css({ "background-color": "#2f3a4e" });
-    } else {
-      $("#line2").fadeOut(200);
-      $("#button2").css({ "background-color": "#2a3344", transition: "0.2s" });
-    }
-  });
-
-  $(window).scroll(function () {
-    if (
-      $(this).scrollTop() >= $(document).height() * 0.22 &&
-      $(this).scrollTop() < $(document).height() * 0.48
-    ) {
-      $("#line3").fadeIn(200);
-      $("#button3").css({ "background-color": "#2f3a4e" });
-    } else {
-      $("#line3").fadeOut(200);
-      $("#button3").css({ "background-color": "#2a3344", transition: "0.2s" });
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() >= $(document).height() * 0.48) {
-      $("#line4").fadeIn(200);
-      $("#button4").css({ "background-color": "#2f3a4e" });
-    } else {
-      $("#line4").fadeOut(200);
-      $("#button4").css({ "background-color": "#2a3344", transition: "0.2s" });
-    }
-  });
-
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(document).height() * 0.05) {
-      $("#t_scrollMenu").fadeIn();
-    } else {
-      $("#t_scrollMenu").fadeOut();
-    }
-  });
-
-  $("#backToTop").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 100);
-  });
-
-  $("#t_backToTop").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 100);
-  });
-
-  $("#m_backToTop").click(function () {
-    $("html, body").animate({ scrollTop: 0 }, 100);
-  });
-
-  $("#toBottom").click(function () {
-    $("html, body").animate({ scrollTop: $(document).height() }, 100);
-  });
-  $("#t_toBottom").click(function () {
-    $("html, body").animate({ scrollTop: $(document).height() }, 100);
-  });
-
-  $("#catchUp").click(function () {
-    $("html, body").animate({ scrollTop: $(document).height() }, 100);
-  });
-
-  $("#t_catchUp").click(function () {
-    $("html, body").animate({ scrollTop: $(document).height() }, 100);
-  });
-});
-
-var base = "https://res.cloudinary.com/dhjfgdati/image/upload";
-var width = `${Math.round(
-  Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-)}`;
-
-//Head shot
-var param = `w_${Math.round(width * 0.8)},f_auto,q_auto,c_scale`;
-document.getElementById(
-  "desCarOne"
-).src = `${base}/${param}/v1596497723/cars1-min_idoz8m`;
-
-//project images
-// param = `w_${Math.round(width / 3)},f_auto,q_auto,c_scale`;
-// var projects = document.getElementsByClassName("project_pic");
-// var img_url = "";
-// for (var i = 0; i < projects.length; i++) {
-//   img_url = `${base}/${param}/${projects[i].id}`;
-//   console.log(projects[i]);
-//   projects[i].src = img_url;
-// }

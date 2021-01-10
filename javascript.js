@@ -5,6 +5,7 @@ var myViewModel = {
     university, work, and hobby life. With a strong attention to detail, \
     I consistently meet personal and school goals on time and to an \
     excellent standard.",
+  productionYear: new Date().getFullYear(),
 };
 
 ko.applyBindings(myViewModel);
@@ -205,3 +206,5 @@ var mobileDevice = {
 if (mobileDevice.iOS()) {
   $(".mobile-back-to-top").css("visibility", "hidden");
 }
+
+AOS.init();

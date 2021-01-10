@@ -602,6 +602,15 @@
     font-size: 1.7vw;
     border-radius: 50px;
   }
+
+  .skills-svg img {
+    width: 70%;
+  }
+
+  .skills-name {
+    margin-top: 2vw;
+    font-size: 1.4vw;
+  }
 }
 
 @media only screen and (min-width: 1199.99px) {
@@ -652,5 +661,13 @@
     font-size: 1vw;
     border-radius: 50px;
     text-decoration: none !important;
+  }
+
+  .skills-svg img {
+    width: 45%;
+  }
+
+  .my-skill:hover {
+    background-color: #fafafa;
   }
 }

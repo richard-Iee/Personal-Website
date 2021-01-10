@@ -58,7 +58,7 @@
   height: 10px;
   width: 10px;
   position: fixed;
-  right: 0.92vw;
+  right: 0.9125vw;
   border-radius: 50%;
   z-index: 29;
 }
@@ -162,6 +162,24 @@
   background: #fff;
 }
 
+.skills-grid {
+  height: 7vw;
+}
+
+.my-skill {
+  width: 7vw;
+  transition: 0.3s;
+}
+
+.skills-svg {
+  flex: 0.7;
+}
+
+.skills-name {
+  flex: 0.3;
+  font-size: 1vw;
+}
+
 /* --------------------------------------- */
 
 .main {
@@ -178,12 +196,12 @@
   height: 1vw;
 }
 
-.s1 {
+/* .s1 {
   scroll-snap-align: start;
-}
+} */
 
 .s2 {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   margin-left: 16.825%;
   margin-right: 16.825%;
   margin-bottom: 10vw;
@@ -193,7 +211,7 @@
 
 .s3 {
   height: 100vh;
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;

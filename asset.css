@@ -173,15 +173,31 @@ hr {
 .white {
   color: white;
 }
+
 .red {
   color: #ff3333;
 }
+
+.motorsport-red {
+  color: #ff4141;
+}
+
 .purple {
   color: #a740ff;
 }
+
 .dark-purple {
   color: #80008c;
 }
+
+.sky-blue {
+  color: rgb(38, 145, 238);
+}
+
+.linkedin-blue {
+  color: #0072b1;
+}
+
 .dark-blue {
   color: rgb(54, 0, 114);
 }
@@ -189,6 +205,11 @@ hr {
 .pink {
   color: #ff55be;
 }
+
+.yellow {
+  color: #fbcd01;
+}
+
 .black {
   color: #212121;
 }

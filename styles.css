@@ -296,6 +296,14 @@
     font-size: 5vw;
     border-radius: 50px;
   }
+
+  .intro-description {
+    display: none;
+  }
+
+  .desktop-intro-description {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 575.99px) and (max-width: 1199.98px) {
@@ -565,6 +573,7 @@
     position: absolute;
     top: 2vw;
     left: 40vw;
+    z-index: 999;
   }
 
   .hambuger-menu-close {
@@ -611,9 +620,21 @@
     margin-top: 2vw;
     font-size: 1.4vw;
   }
+
+  .intro-description {
+    line-height: 5vw;
+  }
+
+  .desktop-intro-description {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1199.99px) {
+  .main {
+    width: calc(100% - 2.5vw) !important;
+  }
+
   .s1 {
     height: 100vh;
   }
@@ -623,7 +644,7 @@
     white-space: nowrap;
     position: absolute;
     top: 10vw;
-    z-index: 999;
+    z-index: 9999;
   }
 
   .fade-button {
@@ -669,5 +690,61 @@
 
   .my-skill:hover {
     background-color: #fafafa;
+  }
+
+  .mobile-intro-description {
+    display: none;
+  }
+
+  /* Arrow */
+  .arrow-wrapper {
+    position: absolute;
+    top: 145vh;
+    left: 70vw;
+    width: 10vw;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+  }
+
+  .arrow .curve {
+    border: 2px solid #be5f4b;
+    border-color: transparent transparent transparent #be5f4b;
+    height: 360px;
+    width: 1200px;
+    border-radius: 230px 0 0 150px;
+  }
+
+  .arrow .point {
+    position: absolute;
+    left: 40px;
+    top: 315px;
+  }
+
+  .arrow .point:before,
+  .arrow .point:after {
+    border: 1px solid #be5f4b;
+    height: 25px;
+    content: "";
+    position: absolute;
+  }
+
+  .arrow .point:before {
+    top: -11px;
+    left: -11px;
+    transform: rotate(-74deg);
+    -webkit-transform: rotate(-74deg);
+    -moz-transform: rotate(-74deg);
+    -ms-transform: rotate(-74deg);
+  }
+
+  .arrow .point:after {
+    top: -20px;
+    left: 5px;
+    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -ms-transform: rotate(12deg);
   }
 }

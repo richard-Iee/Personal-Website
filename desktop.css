@@ -180,10 +180,15 @@
   font-size: 1vw;
 }
 
+.intro-description {
+  line-height: 3.2vw;
+  z-index: 999;
+}
+
 /* --------------------------------------- */
 
 .main {
-  width: calc(100% - 2.5vw);
+  transition: 0.5s;
 }
 
 .gap {
@@ -196,9 +201,10 @@
   height: 1vw;
 }
 
-/* .s1 {
-  scroll-snap-align: start;
-} */
+.s1 {
+  /* scroll-snap-align: start; */
+  transition: 0.3s;
+}
 
 .s2 {
   /* scroll-snap-align: start; */
@@ -210,8 +216,8 @@
 }
 
 .s3 {
-  height: 100vh;
   /* scroll-snap-align: start; */
+  height: 100vh;
   background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -219,6 +225,7 @@
   -webkit-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 0px -11px 55px -15px rgba(0, 0, 0, 0.75);
+  transition: 0.3s;
 }
 
 .big-title {
@@ -406,7 +413,7 @@ body.fade {
 }
 
 .frontLeftPic {
-  height: 100%;
+  height: 100% !important;
   flex: 0.405;
   overflow: hidden;
   background-image: url("./Assets/BACKDROP_DESIGN_VECTOR_16/Ultra\ Violet\ Galactic\ Background\ Free\ Vector.jpg");
@@ -417,6 +424,7 @@ body.fade {
 .frontRightPic {
   background-color: #ededed;
   flex: 0.595;
+  transition: 0.5s;
 }
 
 .myPic {
@@ -468,7 +476,7 @@ body.fade {
 
 .scrollDown {
   position: absolute;
-  left: 36.58vw;
+  left: 36.59vw;
   top: 30vw;
   z-index: 10;
   cursor: pointer;

@@ -73,6 +73,16 @@
   color: rgb(38, 145, 238);
 }
 
+.dark-mode-theme .summary-canary-logo {
+  content: url("./Assets/canary-white.png");
+  transition: 0.3s;
+}
+
+.dark-mode-theme .nasdaq-logo {
+  content: url("./Assets/NASDAQ_Logo_white.svg");
+  transition: 0.3s;
+}
+
 .dark-mode-theme .skill-set {
   background-color: rgb(38, 145, 238);
 }
@@ -104,11 +114,11 @@
 }
 
 .dark-mode-theme .frontRightPic {
-  background-color: #3d3d3d !important;
+  background-color: #121212 !important;
 }
 
 .dark-mode-theme .summary-for-responsive {
-  background-color: #3d3d3d !important;
+  background-color: #121212 !important;
 }
 
 .dark-mode-theme .summary-for-responsive p {

@@ -3,11 +3,13 @@ var myViewModel = {
     "I am a highly motivated and organised individual, who demonstrates \
     the qualities of independent and critical thinking through my \
     university, work, and hobby life. With a strong attention to detail, \
-    I consistently meet personal and school goals on time and to an \
+    I consistently meet personal and professional goals on time and to an \
     excellent standard.",
   productionYear: new Date().getFullYear(),
+  phoneRepairExperience: new Date().getFullYear() - 2015,
 };
 
+// Enable knockout
 ko.applyBindings(myViewModel);
 
 $(this).scrollTop() == 0
@@ -42,6 +44,13 @@ var toBottom = () =>
 
 // When the user scrolls the page, execute function
 window.onscroll = () => {
+  let replaceClass = (id, newClass) => {
+    var className = $(`#${id}`).attr("class");
+    var elem = $(`#${id}`);
+    if (elem.hasClass(className)) elem.removeClass(className);
+    elem.addClass(newClass);
+  };
+
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height =
     document.documentElement.scrollHeight -
@@ -60,41 +69,32 @@ window.onscroll = () => {
   var cars = $("#cars").offset().top;
   var contact = $("#contact").offset().top;
 
-  scrollPosition < internExperienceAndProjects
-    ? $(".fa-user").fadeIn()
-    : $(".fa-user").css("display", "none");
+  if (scrollPosition < internExperienceAndProjects)
+    replaceClass("sideIconDesktopNav", "fas fa-user");
 
-  scrollPosition >= internExperienceAndProjects && scrollPosition < skills
-    ? $(".fa-lightbulb").fadeIn()
-    : $(".fa-lightbulb").css("display", "none");
+  if (scrollPosition >= internExperienceAndProjects && scrollPosition < skills)
+    replaceClass("sideIconDesktopNav", "fas fa-lightbulb");
 
-  scrollPosition >= skills && scrollPosition < volunteeringAndOthers
-    ? $(".fa-star").fadeIn()
-    : $(".fa-star").css("display", "none");
+  if (scrollPosition >= skills && scrollPosition < volunteeringAndOthers)
+    replaceClass("sideIconDesktopNav", "fas fa-star");
 
-  scrollPosition >= volunteeringAndOthers && scrollPosition < employments
-    ? $(".fa-hands-helping").fadeIn()
-    : $(".fa-hands-helping").css("display", "none");
+  if (scrollPosition >= volunteeringAndOthers && scrollPosition < employments)
+    replaceClass("sideIconDesktopNav", "fas fa-hands-helping");
 
-  scrollPosition >= employments && scrollPosition < personalStatements
-    ? $(".fa-building").fadeIn()
-    : $(".fa-building").css("display", "none");
+  if (scrollPosition >= employments && scrollPosition < personalStatements)
+    replaceClass("sideIconDesktopNav", "fas fa-building");
 
-  scrollPosition >= personalStatements && scrollPosition < education
-    ? $(".fa-info").fadeIn()
-    : $(".fa-info").css("display", "none");
+  if (scrollPosition >= personalStatements && scrollPosition < education)
+    replaceClass("sideIconDesktopNav", "fas fa-info");
 
-  scrollPosition >= education && scrollPosition < cars
-    ? $(".fa-university").fadeIn()
-    : $(".fa-university").css("display", "none");
+  if (scrollPosition >= education && scrollPosition < cars - 200)
+    replaceClass("sideIconDesktopNav", "fas fa-university");
 
-  scrollPosition >= cars && scrollPosition < contact - 800
-    ? $(".fa-car").fadeIn()
-    : $(".fa-car").css("display", "none");
+  if (scrollPosition >= cars - 200 && scrollPosition < contact - 300)
+    replaceClass("sideIconDesktopNav", "fas fa-car");
 
-  scrollPosition >= contact - 799
-    ? $(".special-envelope").fadeIn()
-    : $(".special-envelope").css("display", "none");
+  if (scrollPosition >= contact - 300)
+    replaceClass("sideIconDesktopNav", "fas fa-envelope special-envelope");
 
   $(this).scrollTop() > $(document).height() * 0.04
     ? $(".backToTop").fadeIn()
@@ -176,4 +176,34 @@ $(".dark-mode-button").click(() => {
     : $("#dark-mode").addClass("dark-mode-theme");
 });
 
+// https://codepen.io/thenutz/pen/VwYeYEE
+const slider = document.querySelector(".car-scroll-wrapper");
+let isDown = false;
+let startX;
+let scrollLeft;
+
+slider.addEventListener("mousedown", (e) => {
+  isDown = true;
+  slider.classList.add("active");
+  startX = e.pageX - slider.offsetLeft;
+  scrollLeft = slider.scrollLeft;
+});
+slider.addEventListener("mouseleave", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mouseup", () => {
+  isDown = false;
+  slider.classList.remove("active");
+});
+slider.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - slider.offsetLeft;
+  const walk = (x - startX) * 1; //scroll-speed
+  slider.scrollLeft = scrollLeft - walk;
+  console.log(walk);
+});
+
+// enabke aos
 AOS.init();

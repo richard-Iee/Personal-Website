@@ -46,6 +46,7 @@
 }
 
 .desktop-nav-menu .desktop-nav-menu-logo {
+  white-space: nowrap;
   font-size: 20px;
   transition: 0.2s;
   transition-delay: 0.85s !important;
@@ -133,7 +134,7 @@
 #sideIconDesktopNav {
   z-index: 5;
   color: white;
-  display: none;
+  display: block;
 }
 
 .desktop-expanded {
@@ -183,6 +184,20 @@
 .intro-description {
   line-height: 3.2vw;
   z-index: 999;
+}
+
+.pics-summary {
+  height: 200px;
+}
+
+.summary-canary-logo {
+  content: url("./Assets/canary.svg");
+  transition: 0.3s;
+}
+
+.nasdaq-logo {
+  content: url("./Assets/NASDAQ_Logo_black.svg");
+  transition: 0.3s;
 }
 
 /* --------------------------------------- */
@@ -480,10 +495,12 @@ body.fade {
   top: 30vw;
   z-index: 10;
   cursor: pointer;
+  transition: 0.2s;
 }
 
 .scrollDown div {
   font-size: 5.7vw;
+  transition: 0.2s;
 }
 
 .scrollDown i {
@@ -632,6 +649,47 @@ body.fade {
   text-decoration: none !important;
 }
 
+.car-scroll-height {
+  height: 17vw;
+}
+
+.car-scroll-wrapper {
+  width: 97.5vw;
+  height: 25vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  padding: 1%;
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+}
+
+.scroll-car {
+  border-radius: 20px;
+  width: 40vw;
+  flex: 0 0 auto;
+  margin-left: 2vw;
+  overflow: hidden;
+}
+
+.scroll-car img {
+  height: 100%;
+  width: auto;
+  filter: grayscale(36%) sepia(19%) saturate(86%) opacity(92%) contrast(115%);
+  -webkit-filter: grayscale(36%) sepia(19%) saturate(86%) opacity(92%)
+    contrast(115%);
+  -moz-filter: grayscale(36%) sepia(19%) saturate(86%) opacity(92%)
+    contrast(115%);
+}
+
+.scroll-car img.width {
+  width: 100% !important;
+  height: auto !important;
+}
+
 .dimond {
   margin-left: 0.4vw;
   margin-right: 2.6vw;
@@ -646,4 +704,11 @@ body.fade {
 .wave {
   top: -15vw;
   left: 0.4vw;
+}
+
+.album-cover {
+  position: absolute;
+  bottom: 50px;
+  width: 50px;
+  border-radius: 5px;
 }

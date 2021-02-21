@@ -170,7 +170,7 @@
   }
 
   .personal-introduction {
-    width: 90%;
+    width: 93% !important;
     line-height: 8vw;
   }
 
@@ -282,7 +282,7 @@
   .full-screen-menu-item {
     font-size: 5.5vw;
     z-index: 1;
-    padding-top: 9vw;
+    padding-top: 5.5vw;
   }
 
   .full-screen-menu-button {
@@ -303,6 +303,37 @@
 
   .desktop-intro-description {
     display: none;
+  }
+
+  .pics-summary {
+    height: 100%;
+  }
+
+  .pic-summary-border {
+    border-bottom: 1px solid #dee2e6;
+    height: 200px;
+  }
+
+  .pic-summary-border-last {
+    height: 200px;
+  }
+
+  .car-scroll-height {
+    height: 50vw;
+  }
+
+  .car-scroll-wrapper {
+    width: 100vw !important;
+    height: 55vw !important;
+  }
+
+  .scroll-car {
+    width: 90vw;
+    margin-left: 4vw;
+  }
+
+  .scroll-car img {
+    height: 55vw;
   }
 }
 
@@ -601,7 +632,7 @@
 
   .full-screen-menu-button {
     height: 5vw;
-    width: 20vw !important;
+    width: 30vw !important;
     background: rgb(54, 0, 114);
     background: linear-gradient(
       90deg,
@@ -610,6 +641,11 @@
     );
     font-size: 1.7vw;
     border-radius: 50px;
+  }
+
+  .ham-social {
+    position: relative;
+    bottom: 20px;
   }
 
   .skills-svg img {
@@ -627,6 +663,36 @@
 
   .desktop-intro-description {
     display: none;
+  }
+
+  .pics-summary {
+    height: 100%;
+  }
+
+  .pic-summary-border {
+    border-bottom: 1px solid #dee2e6;
+    height: 200px;
+  }
+
+  .pic-summary-border-last {
+    height: 200px;
+  }
+
+  .car-scroll-height {
+    height: 47vw;
+  }
+
+  .car-scroll-wrapper {
+    width: 100vw !important;
+    height: 55vw !important;
+  }
+
+  .scroll-car {
+    width: 90vw;
+  }
+
+  .scroll-car img {
+    height: 55vw;
   }
 }
 
@@ -656,6 +722,7 @@
   }
 
   .full-screen-menu-title {
+    white-space: nowrap;
     font-size: 1.5vw;
   }
 
@@ -746,5 +813,22 @@
     -webkit-transform: rotate(12deg);
     -moz-transform: rotate(12deg);
     -ms-transform: rotate(12deg);
+  }
+
+  .pic-summary {
+    flex: 0.25;
+  }
+
+  .pic-summary-border {
+    border-right: 1px solid #dee2e6;
+  }
+
+  .scrollDown:hover {
+    top: 29.8vw;
+    left: 36.45vw;
+  }
+
+  .scrollDown div:hover {
+    font-size: 6vw;
   }
 }

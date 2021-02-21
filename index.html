@@ -37,17 +37,23 @@
       itemprop="description"
       content="University of Auckland Computer Science sophomore student. President, founder and developer at the University of Auckland Motorsport Club."
     />
-    <meta itemprop="image" content="https://richardlee.dev/./Assets/2.JPG" />
+    <meta
+      itemprop="image"
+      content="https://richard-lee.com/Assets/portrait_filter.JPG"
+    />
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:url" content="https://richardlee.dev" />
+    <meta property="og:url" content="https://richard-lee.com" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Richard Lee | University of Auckland" />
     <meta
       property="og:description"
       content="University of Auckland Computer Science sophomore student. President, founder and developer at the University of Auckland Motorsport Club."
     />
-    <meta property="og:image" content="https://richardlee.dev/./Assets/2.JPG" />
+    <meta
+      property="og:image"
+      content="https://richard-lee.com/Assets/portrait_filter.JPG"
+    />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -58,7 +64,7 @@
     />
     <meta
       name="twitter:image"
-      content="https://richardlee.dev/./Assets/2.JPG"
+      content="https://richard-lee.com/Assets/portrait_filter.JPG"
     />
 
     <!-- Meta Tags Generated via http://heymeta.com -->
@@ -69,12 +75,17 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="asset.css" />
     <link rel="stylesheet" type="text/css" href="desktop.css" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="dark-mode.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="preload"
       as="font"
@@ -117,29 +128,19 @@
           ></div>
           <div class="side-icon-icon-wrapper">
             <i id="sideIconDesktopNav" class="fas fa-user"></i>
-            <i id="sideIconDesktopNav" class="fas fa-lightbulb"></i>
-            <i id="sideIconDesktopNav" class="fas fa-star"></i>
-            <i id="sideIconDesktopNav" class="fas fa-hands-helping"></i>
-            <i id="sideIconDesktopNav" class="fas fa-building"></i>
-            <i id="sideIconDesktopNav" class="fas fa-info"></i>
-            <i id="sideIconDesktopNav" class="fas fa-university"></i>
-            <i id="sideIconDesktopNav" class="fas fa-car"></i>
-            <i
-              id="sideIconDesktopNav"
-              class="fas fa-envelope special-envelope"
-            ></i>
           </div>
           <div class="side-icon-vertical-line" style="margin-top: 12px"></div>
         </div>
-        <div class="desktop-nav-menu-logo sansSerifBldFLF-medium" id="qwe">
-          <span class="purple">richardlee</span><span class="pink">.dev</span>
+        <div class="desktop-nav-menu-logo sansSerifBldFLF-medium">
+          <span class="purple">richard-lee</span><span class="pink">.com</span>
         </div>
 
         <!-- When expanded -->
         <div class="desktop-expanded position-absolute w-100 h-100 p-5">
           <input class="dark-mode-button mb-4" type="checkbox" />
           <div class="full-screen-menu-title sansSerifBldFLF-medium">
-            <span class="purple">richardlee</span><span class="pink">.dev</span>
+            <span class="purple">richard-lee</span
+            ><span class="pink">.com</span>
           </div>
           <div
             onclick="toHome()"
@@ -192,6 +193,13 @@
               ><i class="fab fa-github fa-2x white pl-4"></i
             ></a>
           </div>
+          <a
+            href="https://music.apple.com/album/drivers-license-single/1545042317"
+            target="_blank"
+            ><img
+              class="album-cover"
+              src="./Assets/albums/drivers_License_Olivia_Rodrigo.png"
+          /></a>
         </div>
       </div>
       <div class="main h-100 w-100">
@@ -273,8 +281,8 @@
           <div class="m-auto" style="width: 83%">
             <input class="dark-mode-button mt-5" type="checkbox" />
             <div class="full-screen-menu-item sansSerifBldFLF-medium">
-              <span class="purple">richardlee</span
-              ><span class="pink">.dev</span>
+              <span class="purple">richard-lee</span
+              ><span class="pink">.com</span>
             </div>
             <div
               onclick="toHome(); document.getElementById('toggleMenu').classList.toggle('opened'); document.getElementById('toggleMenu').setAttribute('aria-expanded', document.getElementById('toggleMenu').classList.contains('opened')); toggleMobNav()"
@@ -282,6 +290,13 @@
               class="full-screen-menu-item white sansSerifFLF-demibold pt-3 mt-4 mt-sm-3"
             >
               <a class="white text-decoration-none">HOME</a>
+            </div>
+            <div
+              onclick="introduction(); document.getElementById('toggleMenu').classList.toggle('opened'); document.getElementById('toggleMenu').setAttribute('aria-expanded', document.getElementById('toggleMenu').classList.contains('opened')); toggleMobNav()"
+              aria-label="Main Menu"
+              class="full-screen-menu-item white sansSerifFLF-demibold"
+            >
+              <a class="white text-decoration-none">INTRODUCTION</a>
             </div>
             <div
               onclick="internExperienceAndProjects(); document.getElementById('toggleMenu').classList.toggle('opened'); document.getElementById('toggleMenu').setAttribute('aria-expanded', document.getElementById('toggleMenu').classList.contains('opened')); toggleMobNav()"
@@ -318,7 +333,7 @@
                 >View My CV
               </a>
             </div>
-            <div class="d-flex flex-row mt-5">
+            <div class="ham-social d-flex flex-row mt-5">
               <a
                 onclick="document.getElementById('toggleMenu').classList.toggle('opened'); document.getElementById('toggleMenu').setAttribute('aria-expanded', document.getElementById('toggleMenu').classList.contains('opened')); toggleMobNav()"
                 aria-label="Main Menu"
@@ -346,7 +361,7 @@
               style="z-index: 10"
             >
               <p class="top-one-normal sansSerifBldFLF-medium">
-                richardlee<span class="pink">.dev</span>
+                richard-lee<span class="pink">.com</span>
               </p>
               <p
                 class="top-two sansSerifBldFLF-medium d-block d-sm-none d-xl-block"
@@ -426,7 +441,7 @@
           </div>
           <a class="scrollDown d-none d-sm-block">
             <div
-              class="fas fa-circle d-flex align-items-center justify-content-center white shadow"
+              class="top-scroll-down fas fa-2x fa-circle d-flex align-items-center justify-content-center white shadow"
             >
               <i
                 class="fa fa-chevron-down position-absolute pt-1 dark-purple"
@@ -448,7 +463,7 @@
           <a
             href="./Assets/downableMaterial/Resume.pdf#zoom=30"
             target="_blank"
-            class="shadow position-relative d-flex align-items-center justify-content-center white"
+            class="shadow position-relative d-flex align-items-center justify-content-center white personal-introduction"
             ><p class="white sansSerifFLF-demibold m-auto">View My CV</p></a
           >
         </div>
@@ -476,16 +491,21 @@
               class="sansSerifFLF-medium intro-description job-title pt-5 mt-5"
             >
               Kia Ora, my name is Richard, welcome to my little corner of the
-              internet! I'm a student at the
+              internet! I'm an undergraduate student at the
               <span class="sky-blue">University of Auckland</span>,
               <span class="pink">New Zealand</span> and interning at
               <span class="yellow">Canary data solutions</span>. I started the
               <span class="motorsport-red"
                 >University of Auckland Motorsport Club</span
               >
-              in my first year of the university and I'm currently the club
-              secretary and software engineer. You can also find me on
-              <span class="linkedin-blue">Linkedin</span> or
+              in my first year at the university, and I'm currently the club
+              secretary and software engineer. You can find me on
+              <span
+                onclick="window.open('https://www.linkedin.com/in/richard875/', '_blank');"
+                class="linkedin-blue cursor-pointer"
+                >Linkedin</span
+              >
+              or
               <a href="mailto:richard_875@me.com" target="_blank">email me</a>.
               <span class="desktop-intro-description">
                 Simply get started by hovering over the navigation bar, hope you
@@ -502,11 +522,176 @@
               </div>
             </div>
           </div>
+          <div class="gap"></div>
+          <center
+            onclick="window.open('https://www.joinclubhouse.com/', '_blank');"
+            class="cursor-pointer"
+          >
+            <img width="50vw" src="./Assets/clubhouse_icon.png" />
+            <p class="skills-text black pt-2">
+              <i class="fas fa-at small"></i>richard_875
+            </p>
+          </center>
+          <div class="gap"></div>
+          <div
+            data-aos="fade-up"
+            class="pics-summary d-flex flex-column flex-xl-row"
+          >
+            <div
+              class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
+            >
+              <img
+                width="20%"
+                class="d-block d-sm-none"
+                src="./Assets/nelsoncollegeLogo.png"
+              />
+              <img
+                width="30%"
+                class="d-none d-xl-block"
+                src="./Assets/nelsoncollegeLogo.png"
+              />
+              <img
+                width="10%"
+                class="pb-4 d-none d-sm-block d-xl-none"
+                src="./Assets/nelsoncollegeLogo.png"
+              />
+            </div>
+            <div
+              class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
+            >
+              <img
+                width="45%"
+                class="d-block d-sm-none"
+                src="./Assets/uoa.png"
+              />
+              <img
+                width="30%"
+                class="d-none d-sm-block d-xl-none"
+                src="./Assets/uoa.png"
+              />
+              <img
+                width="60%"
+                class="d-none d-xl-block"
+                src="./Assets/uoa.png"
+              />
+            </div>
+            <div
+              class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
+            >
+              <img width="45%" class="summary-canary-logo d-block d-sm-none" />
+              <img
+                width="30%"
+                class="summary-canary-logo d-none d-sm-block d-xl-none"
+              />
+              <img width="60%" class="summary-canary-logo d-none d-xl-block" />
+            </div>
+            <div
+              class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
+            >
+              <img
+                width="15%"
+                class="d-block d-sm-none"
+                src="./Assets/chancery.png"
+              />
+              <img
+                width="12%"
+                class="d-none d-sm-block d-xl-none"
+                src="./Assets/chancery.png"
+              />
+              <img
+                width="25%"
+                class="d-none d-xl-block"
+                src="./Assets/chancery.png"
+              />
+            </div>
+            <div
+              class="pic-summary pic-summary-border-last d-flex align-items-center justify-content-center"
+            >
+              <img
+                width="40%"
+                class="d-block d-sm-none"
+                src="./Assets/yourcar.png"
+              />
+              <img
+                width="25%"
+                class="d-none d-sm-block d-xl-none"
+                src="./Assets/yourcar.png"
+              />
+              <img
+                width="60%"
+                class="d-none d-xl-block"
+                src="./Assets/yourcar.png"
+              />
+            </div>
+          </div>
           <p class="big-title" id="internExperienceAndProjects">
             Intern Experience & Projects
           </p>
           <p class="medium-title">Intern Experience</p>
           <hr />
+          <div class="title-box">
+            <div class="h-100">
+              <p class="job-title red">Software Engineer</p>
+            </div>
+            <div class="title-box-right d-none d-sm-flex">
+              <img class="summary-canary-logo" height="90%" />
+            </div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="date-range">
+            Sep<span class="d-none d-sm-inline-block">tember</span> 2020 —
+            Current
+          </p>
+          <p class="job-description">
+            • In a team of 3, we improved the robustness of the system by
+            rewriting over 150 JavaScript files into TypeScript files
+          </p>
+          <p class="job-description">
+            • Complete redesign of the company
+            <a href="https://canary.co.nz/" target="_blank">website</a> (yet to
+            publish)
+          </p>
+          <p class="job-description">
+            • Communicate directly with clients to carry out feature requests
+            and / or to resolve problem report
+          </p>
+          <p class="job-description">
+            - Tech stack: ASP.NET • C#/VB • JavaScript/TypeScript • Knockout/Vue
+            • mssql • TeamCity/Jenkins • TortoiseHg • Octopus Deploy
+          </p>
+          <div class="gap"></div>
+          <div class="title-box">
+            <div class="h-100">
+              <p class="job-title red">
+                Software Engineer - Chancery investment banking interview App
+              </p>
+            </div>
+            <div class="title-box-right d-none d-sm-flex">
+              <img src="./Assets/chancery.png" height="90%" />
+            </div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="date-range">
+            Sep<span class="d-none d-sm-inline-block">tember</span> 2020 —
+            Feb<span class="d-none d-sm-inline-block">ruary</span>
+            2021&nbsp;&nbsp;|&nbsp;&nbsp;Berkeley, CA
+          </p>
+          <p class="job-description">
+            • Improved front-end fetch logic by adding helper functions
+          </p>
+          <p class="job-description">
+            • Improved mobile browsing experience by redesigning the mobile
+            layout
+          </p>
+          <p class="job-description">
+            • Created the front-end UI and logic for feedback button
+          </p>
+          <p class="job-description">
+            - Tech stack: React • Node.js • jQuery • Bootstrap
+          </p>
+          <div class="gap"></div>
           <div class="title-box">
             <div class="h-100">
               <p class="job-title red">Junior Developer</p>
@@ -516,18 +701,24 @@
             </div>
           </div>
           <div class="gap d-block d-sm-none"></div>
-          <p class="date-range">January 2020 — Current</p>
-          <p class="job-description">
-            • Wrote a script using npm and Javascript to return the number and
-            percentage of written-off New Zealand new vehicles after the first
-            18 months of purchase
+          <p class="date-range">
+            Jan<span class="d-none d-sm-inline-block">uary</span> 2020 — Current
           </p>
           <p class="job-description">
-            • Tested the frontend of the company website using cypress
+            • Created a script that calculates and returns the number and
+            percentage of written-off New Zealand new vehicles after first 18
+            months of purchase
+          </p>
+          <p class="job-description">
+            • Improve the system durability by testing the front-end using
+            cypress
           </p>
           <p class="job-description">
             • Gained valuable experience of working in a fast pace startup
             environment
+          </p>
+          <p class="job-description">
+            - Tech stack: Next.js • Node.js • GraphQL • Jest • Cypress • HubSpot
           </p>
           <div class="gap"></div>
           <div class="title-box">
@@ -539,29 +730,25 @@
             </div>
           </div>
           <div class="gap d-block d-sm-none"></div>
-          <p class="date-range">July 2019 — November 2020</p>
-          <p class="job-description">
-            • In a team of four, we are rebuilding the whole Velocity (CIE)
-            Website using Javascript and Wordpress.
+          <p class="date-range">
+            Jan<span class="d-none d-sm-inline-block">uary</span> 2020 —
+            Nov<span class="d-none d-sm-inline-block">ember</span>
+            2020&nbsp;&nbsp;|&nbsp;&nbsp;Marketing team
           </p>
           <p class="job-description">
-            • Link (Not yet published):&nbsp;
-            <a
-              class="purple"
-              href="https://www.velocity.auckland.ac.nz/"
-              target="_blank"
-              >velocity.auckland.ac.nz&nbsp;&nbsp;&nbsp;&nbsp;<i
-                class="fas fa-external-link-alt"
-              ></i
-            ></a>
+            • Working in a team of four, rebuilt and designed Velocity (CIE)’s
+            Website with Javascript and Wordpress
           </p>
-          <p class="job-description">• Maintenance of the Velocity Website.</p>
+          <p class="job-description">• Maintenance of the Velocity Website</p>
+          <p class="job-description">
+            - Tech stack: Wordpress • HTML • CSS • Javascript • git
+          </p>
           <a
             href="./Assets/downableMaterial/velocityWebsite.jpg"
             target="_blank"
             class="pButton"
           >
-            <div class="pButtonText">Preview my design!</div>
+            <div class="pButtonText">View my design!</div>
             <div class="pButtonimage">
               <img
                 src="./Assets/1200px-Adobe_XD_CC_icon.svg.png"
@@ -572,6 +759,118 @@
           <div class="gap d-block d-sm-none"></div>
           <p class="medium-title">Software Projects</p>
           <hr />
+          <div class="title-box">
+            <div class="h-100 d-flex flex-row">
+              <p class="job-title red">
+                Chrome extension to enable YouTube comment section
+              </p>
+              <img
+                src="./Assets/youtube.png"
+                class="h-100 pb-0 pb-md-1 pb-lg-0 pl-3 d-none d-sm-block"
+              />
+            </div>
+            <div class="title-box-right"></div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="job-description w-100">
+            • Developed a Chrome browser extension that lets user comment on
+            “comment disabled” YouTube videos
+          </p>
+          <p class="job-description w-100">
+            • Created an algorithm that sorts comments with timestamp and number
+            of likes as attributes
+          </p>
+          <p class="job-description w-100">
+            • Host on AWS with AWS DynamoDB and AWS Lambda
+          </p>
+          <p class="job-description w-100">
+            • Integrated OAuth and OpenCV for one-click login
+          </p>
+          <p class="job-description">
+            - Tech stack: jQuery • AJAX • AWS DynamoDB • AWS Lambda • Serverless
+            • Chrome extension SDK • node.js
+          </p>
+          <div class="gap"></div>
+          <div class="title-box">
+            <div class="h-100 d-flex flex-row">
+              <p class="job-title text-nowrap-tablet red">
+                Nasdaq ETF portfolio copier and autotrader
+              </p>
+              <img
+                class="nasdaq-logo h-75 pb-0 pb-md-1 pb-lg-0 pl-3 d-none d-sm-block"
+              />
+            </div>
+            <div class="title-box-right"></div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="job-description w-100">
+            • Developed an automation software that fetches ETF portfolios from
+            web API and calculates changes made since the last fetch
+          </p>
+          <p class="job-description w-100">
+            • Software will send out daily reports to notify the user with
+            portfolio changes
+          </p>
+          <p class="job-description w-100">
+            • When connected to trading brokers, software is able to use API
+            calls to execute orders. e.g. Robinhood, Interactive Brokers, TD
+            Ameritrade…
+          </p>
+          <p class="job-description">
+            - Tech stack: Node.js • AJAX • TypeScript • moment.js • Nodemailer •
+            Shell commands • beautifulsoup
+          </p>
+          <a
+            href="https://github.com/richard875/OutSmartNASQ-tracker"
+            target="_black"
+            class="pButton"
+          >
+            <div class="pButtonText">View on Github</div>
+            <div class="pButtonimage" style="background-color: #212121">
+              <i class="fab fa-github white github-button-icon"></i>
+            </div>
+          </a>
+          <div class="gap"></div>
+          <div class="title-box">
+            <div class="h-100">
+              <p class="job-title red">
+                Personal portfolio website
+                <span class="black">(this project!)</span>
+              </p>
+            </div>
+            <div class="title-box-right"></div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="job-description">
+            • Developed my own portfolio website to better present myself
+          </p>
+          <p class="job-description">
+            • Used to host on AWS with S3, Route 53 and Cloudfront, now housing
+            with Netlify
+          </p>
+          <p class="job-description">
+            - Tech stack: Netlify • HTML • CSS • JavaScript • jQuery • Bootstrap
+            • Knockout • Fontawesome
+          </p>
+          <a
+            href="https://github.com/richard875/Personal-Website"
+            target="_black"
+            class="pButton"
+          >
+            <div class="pButtonText">View on Github</div>
+            <div class="pButtonimage" style="background-color: #212121">
+              <i class="fab fa-github white github-button-icon"></i>
+            </div>
+          </a>
+          <div class="gap"></div>
+
+          <div class="gap d-none d-sm-block d-lg-block d-xl-none"></div>
           <div class="title-box">
             <div class="h-100">
               <p class="job-title red">News and information App</p>
@@ -586,15 +885,16 @@
             and news, as well as upcoming events
           </p>
           <p class="job-description job-description-app">
-            • App was developed using React Native, Javascript and related
-            libraries, works on both iOS and Android
-          </p>
-          <p class="job-description">
-            • Also developed an API for it using AWS DynamoDB and Serverless
+            • Developed an API for the App with the functionalities of GET and
+            POST
           </p>
           <p class="job-description job-description-app">
             • Currently maintaining the app including posting new articles,
-            fixing bugs and issuing updates.
+            fixing bugs and issuing updates
+          </p>
+          <p class="job-description">
+            - Tech stack: React Native • Expo • node.js • AWS DynamoDB • AWS
+            Lambda • Serverless
           </p>
           <a
             href="https://github.com/richard875/Motorsport-Club"
@@ -626,61 +926,9 @@
               <img style="width: 90%" src="./Assets/appPic3.png" />
             </div>
           </div>
-          <div class="gap"></div>
-          <div class="gap"></div>
           <div class="gap d-none d-sm-block d-lg-block d-xl-none"></div>
           <div class="gap d-none d-sm-block d-lg-block d-xl-none"></div>
-          <div class="title-box">
-            <div class="h-100">
-              <p class="job-title red">
-                Chrome extension to enable YouTube comment section
-              </p>
-            </div>
-            <div class="title-box-right"></div>
-          </div>
-          <div class="gap d-block d-sm-none"></div>
-          <div class="gap d-block d-sm-none"></div>
-          <div class="gap d-block d-sm-none"></div>
-          <p class="job-description w-100">
-            • Currently developing a Chrome browser extension, this extension
-            lets user to comment on “comment disabled” YouTube videos.
-          </p>
-          <p class="job-description w-100">
-            • This is the most challenging project for me so for. This projects
-            requires a huge amount of jQuery, AJAX, AWS DynamoDB, lambda with
-            the Serverless framework to manage cloud storage and API methods.
-            Alongside with HTML, CSS and Chrome extension SDK.
-          </p>
-          <div class="gap"></div>
-          <div class="title-box">
-            <div class="h-100">
-              <p class="job-title red">
-                Personal portfolio website
-                <span class="black">(this project!)</span>
-              </p>
-            </div>
-            <div class="title-box-right"></div>
-          </div>
-          <div class="gap d-block d-sm-none"></div>
-          <div class="gap d-block d-sm-none"></div>
-          <div class="gap d-block d-sm-none"></div>
-          <p class="job-description">
-            • Developed my own portfolio website to better present myself
-          </p>
-          <p class="job-description">
-            • Developed using HTML, CSS, Jquery and Bootstrap, hosted using AWS
-            S3, Route 53 and Cloudfront
-          </p>
-          <a
-            href="https://github.com/richard875/Personal-Website"
-            target="_black"
-            class="pButton"
-          >
-            <div class="pButtonText">View on Github</div>
-            <div class="pButtonimage" style="background-color: #212121">
-              <i class="fab fa-github white github-button-icon"></i>
-            </div>
-          </a>
+          <div class="gap d-none d-sm-block d-lg-block d-xl-none"></div>
           <div class="gap d-block d-sm-none"></div>
           <p class="big-title" id="skills">Skills</p>
           <hr class="d-sm-none" />
@@ -777,7 +1025,7 @@
                 <div
                   class="skills-name d-flex align-items-center justify-content-center text-center"
                 >
-                  aws
+                  aws / serverless
                 </div>
               </div>
               <div class="my-skill h-100 d-flex flex-column">
@@ -830,16 +1078,24 @@
               </div>
             </div>
           </div>
-
+          <div class="gap d-none d-sm-block d-lg-block d-xl-none"></div>
           <div class="gap"></div>
           <div data-aos="fade-up">
             <div class="title-box">
               <div class="h-100">
-                <p class="skills-text black">Javascript</p>
+                <p class="skills-text black">ASP.NET / C#</p>
               </div>
             </div>
             <div class="gap d-block d-sm-none"></div>
-            <div class="w-100"><div class="skill-set"></div></div>
+            <div class="w-75"><div class="skill-set"></div></div>
+            <div class="gap"></div>
+            <div class="title-box">
+              <div class="h-100">
+                <p class="skills-text black">JavaScript / TypeScript</p>
+              </div>
+            </div>
+            <div class="gap d-block d-sm-none"></div>
+            <div class="w-75"><div class="skill-set"></div></div>
             <div class="gap"></div>
             <div class="title-box">
               <div class="h-100">
@@ -847,15 +1103,7 @@
               </div>
             </div>
             <div class="gap d-block d-sm-none"></div>
-            <div class="w-75"><div class="skill-set"></div></div>
-            <div class="gap"></div>
-            <div class="title-box">
-              <div class="h-100">
-                <p class="skills-text black">Typescript</p>
-              </div>
-            </div>
-            <div class="gap d-block d-sm-none"></div>
-            <div class="w-75"><div class="skill-set"></div></div>
+            <div class="w-50"><div class="skill-set"></div></div>
             <div class="gap"></div>
             <div class="title-box">
               <div class="h-100">
@@ -867,7 +1115,7 @@
             <div class="gap"></div>
             <div class="title-box">
               <div class="h-100">
-                <p class="skills-text black">Adobe XD</p>
+                <p class="skills-text black">Version Control</p>
               </div>
             </div>
             <div class="gap d-block d-sm-none"></div>
@@ -875,7 +1123,7 @@
             <div class="gap"></div>
             <div class="title-box">
               <div class="h-100">
-                <p class="skills-text black">AWS</p>
+                <p class="skills-text black">AWS / Serverless</p>
               </div>
             </div>
             <div class="gap d-block d-sm-none"></div>
@@ -902,11 +1150,16 @@
           <div class="gap d-block d-sm-none"></div>
           <div class="gap d-block d-sm-none"></div>
           <p class="date-range">
-            <span class="red">> President and founder</span> | July 2019 — July
+            <span class="red">- President and founder</span> | Jul<span
+              class="d-none d-sm-inline-block"
+              >y</span
+            >
+            2019 — Jul<span class="d-none d-sm-inline-block">y</span>
             2020
           </p>
           <p class="date-range">
-            <span class="red">> Secretary and software engineer</span> | July
+            <span class="red">- Secretary and software engineer</span> |
+            Jul<span class="d-none d-sm-inline-block">y</span>
             2020 — Current
           </p>
           <div class="gap-small d-none d-xl-block"></div>
@@ -927,6 +1180,37 @@
             src="./Assets/UoA-PG-2019Logo.png"
             class="w-100 pt-4 pb-5 uoa-pg-2019"
           />
+          <div class="title-box">
+            <div class="h-100 d-flex flex-row">
+              <p class="job-title text-nowrap-tablet red">
+                University of Auckland Centre for Innovation and
+                Entrepreneurship
+              </p>
+              <img
+                src="./Assets/velocity_logo_square.png"
+                class="h-75 pl-3 mt-1 d-none d-sm-block"
+              />
+            </div>
+            <div class="title-box-right"></div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="date-range">
+            Aug<span class="d-none d-sm-inline-block">ust</span> 2019 — Dec<span
+              class="d-none d-sm-inline-block"
+              >ember</span
+            >
+            2019&nbsp;&nbsp;|&nbsp;&nbsp;Education team
+          </p>
+          <p class="job-description w-100">
+            • MC for innovation seminars which runs fortnightly
+          </p>
+          <p class="job-description w-100">
+            • Volunteer at Velocity events, e.g. Innovation challange, 100k
+            finals
+          </p>
+          <div class="gap"></div>
           <div class="title-box">
             <div class="h-100 d-flex flex-row">
               <p class="job-title text-nowrap-tablet red">
@@ -952,31 +1236,14 @@
           <div class="gap"></div>
           <div class="title-box">
             <div class="h-100 d-flex flex-row">
-              <p class="job-title text-nowrap-tablet red">
-                Automotive Mechanic Assistant in Shanghai
-              </p>
-              <img
-                src="./Assets/mechanic png/mechanic.png"
-                class="h-75 pl-3 d-none d-sm-block"
-              />
-            </div>
-            <div class="title-box-right"></div>
-          </div>
-          <div class="gap d-block d-sm-none"></div>
-          <div class="gap d-block d-sm-none"></div>
-          <div class="gap d-block d-sm-none"></div>
-          <p class="date-range">2016-2018</p>
-          <p class="job-description w-100">
-            • Performed a number of basic servicing tasks on vehicles, including
-            oil changes, tyre changes, repair and replacement of minor engine
-            components, and cleaning of cars
-          </p>
-          <div class="gap"></div>
-          <div class="title-box">
-            <div class="h-100">
               <p class="job-title red">
                 Class representative for the University
               </p>
+              <img
+                src="./Assets/university_flat.png"
+                class="pl-3 d-none d-sm-block"
+                style="height: 85%"
+              />
             </div>
             <div class="title-box-right"></div>
           </div>
@@ -1006,22 +1273,50 @@
             </div>
           </a>
           <div class="gap"></div>
+          <div class="title-box">
+            <div class="h-100 d-flex flex-row">
+              <p class="job-title text-nowrap-tablet red">
+                Automotive Mechanic Assistant in Shanghai
+              </p>
+              <img
+                src="./Assets/mechanic png/mechanic.png"
+                class="h-75 pl-3 d-none d-sm-block"
+              />
+            </div>
+            <div class="title-box-right"></div>
+          </div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <div class="gap d-block d-sm-none"></div>
+          <p class="date-range">2016-2018</p>
+          <p class="job-description w-100">
+            • Performed a number of basic servicing tasks on vehicles, including
+            oil changes, tyre changes, repair and replacement of minor engine
+            components, and cleaning of cars
+          </p>
+          <div class="gap"></div>
+
           <div class="gap d-block d-sm-none"></div>
           <p class="job-title red">
             •
-            <span class="black">
-              Attend tech conferences regularly, such as OWASP and
-              Cloud OnBoard: GCP Fundamentals Series (Online)
+            <span class="black"
+              >Attend tech conferences regularly, e.g. OWASP, Postman Galaxy,
+              AWS re:Invent...
             </span>
           </p>
           <div class="gap"></div>
           <p class="job-title red">
             •
             <span class="black">
-              Car lover. In high school, I would buy cheap cars, fix them up and
+              Car lover. In high school, I bought cheap cars, fix them up and
               refurbish them then sell at the higher price. Personally, I have
               owned 8 cars so far. (More in the
-              <span class="red"> About </span>
+              <span
+                class="sky-blue cursor-pointer"
+                onclick="personalStatements()"
+              >
+                About
+              </span>
               section)
             </span>
           </p>
@@ -1029,7 +1324,9 @@
           <p class="job-title red">
             •
             <span class="black">
-              More than 5 years of experience repairing phones and computers
+              More than
+              <span data-bind="text: phoneRepairExperience"></span> years of
+              experience repairing phones and computers
             </span>
           </p>
           <p class="medium-title" id="employments">Employments</p>
@@ -1046,7 +1343,10 @@
           <div class="gap d-block d-sm-none"></div>
           <div class="gap d-block d-sm-none"></div>
           <div class="gap d-block d-sm-none"></div>
-          <p class="date-range">12/2019 – 03/2020</p>
+          <p class="date-range">
+            Dec<span class="d-none d-sm-inline-block">ember</span> 2019 –
+            Mar<span class="d-none d-sm-inline-block">ch</span> 2020
+          </p>
           <p class="job-description w-100">
             • Manage the store, handling stock ordering and customer queries
           </p>
@@ -1071,13 +1371,19 @@
           <div class="gap d-block d-sm-none"></div>
           <div class="gap d-block d-sm-none"></div>
           <div class="gap d-block d-sm-none"></div>
-          <p class="date-range">03/2018 – 12/2018</p>
+          <p class="date-range">
+            Mar<span class="d-none d-sm-inline-block">ch</span> 2018 – Dec<span
+              class="d-none d-sm-inline-block"
+              >ember</span
+            >
+            2018
+          </p>
           <p class="job-description w-100">
             • In this position I was responsible for repairing broken devices
             presented by clients. Common issues I dealt with included cracked
             screen replacements, worn out batteries, motherboard failure,
             operating system diagnosis and repair, and a wide variety of other
-            related work.
+            related work
           </p>
           <div class="gap"></div>
           <div class="title-box">
@@ -1094,7 +1400,7 @@
           <p class="date-range">2017</p>
           <p class="job-description w-100">
             • General cleaning of school environments, including vacuuming,
-            window cleaning, sweeping, and rubbish clearing.
+            window cleaning, sweeping, and rubbish clearing
           </p>
           <div class="gap"></div>
           <div class="title-box">
@@ -1107,20 +1413,17 @@
           <p class="date-range">2015 - 2018</p>
           <p class="job-description w-100">
             • This is a casual position and involves cleaning around the
-            kitchen, food preparation, stock rotation, and miscellaneous tasks.
+            kitchen, food preparation, stock rotation, and miscellaneous tasks
           </p>
           <p class="big-title">About</p>
           <p class="medium-title" id="personalStatements">
             Personal Statements
           </p>
           <hr />
-          <p class="personal-description">
-            I am a highly motivated and organised individual, who demonstrates
-            the qualities of independent and critical thinking through my
-            school, work, and hobby life. With a strong attention to detail, I
-            consistently meet personal and school goals on time and to an
-            excellent standard.
-          </p>
+          <p
+            class="personal-description"
+            data-bind="text: personalIntroduction"
+          ></p>
           <div class="gap"></div>
           <p class="job-title red">Communication</p>
           <p class="personal-description">
@@ -1133,10 +1436,11 @@
           <p class="personal-description">
             I take great interest in technology and entrepreneurship. My
             personal hobbies and interests include cars (including repairing and
-            selling), digital technology (such as general developing, blockchain
-            and AI technology), hard technology (such as fixing phones,
-            computers and other hardware as a hobby and for business), and
-            banking / commercial sector (such as stock trading. and investing).
+            selling), digital technology (such as blockchain, AI/ML,
+            human-computer interaction and discrete mathematics), hard
+            technology (such as repairing phones, computers and other hardware
+            as a hobby and for business), and banking / commercial sector (such
+            as stock trading. and investing).
           </p>
           <div class="gap"></div>
           <p class="job-title red">Goal</p>
@@ -1168,7 +1472,9 @@
             class="title-box flex-column flex-sm-row align-items-start align-items-sm-center"
           >
             <p class="school-small-text black">
-              March 2019 — December 2022 (Expected)
+              Mar<span class="d-none d-sm-inline-block">ch</span> 2019 —
+              Dec<span class="d-none d-sm-inline-block">ember</span> 2022
+              (Expected)
             </p>
             <p class="school-small-text black">Computer Science</p>
           </div>
@@ -1187,6 +1493,10 @@
           <p class="school-small-text black">
             <span class="red">•</span> Computer Science 220 - Algorithms and
             Data Structures - A
+          </p>
+          <p class="school-small-text black">
+            <span class="red">•</span> Computer Science 230 - Object Oriented
+            Software Development - A+
           </p>
           <img
             data-aos="fade-up"
@@ -1211,7 +1521,13 @@
           <div
             class="title-box flex-column flex-sm-row align-items-start align-items-sm-center"
           >
-            <p class="school-small-text black">July 2014 — December 2018</p>
+            <p class="school-small-text black">
+              Jul<span class="d-none d-sm-inline-block">y</span> 2014 — Dec<span
+                class="d-none d-sm-inline-block"
+                >ember</span
+              >
+              2018
+            </p>
             <p class="school-small-text black">Nelson, New Zealand</p>
           </div>
           <img
@@ -1225,8 +1541,8 @@
           <p class="big-title">Hobbies</p>
           <hr />
           <p class="personal-description">
-            <span class="red">Hockey</span> — I played hockey for two and a half
-            years in high school
+            <span class="red">Hockey</span> — I played field hockey for two and
+            a half years in high school
           </p>
           <div class="gap d-block d-sm-none"></div>
           <p class="personal-description">
@@ -1237,10 +1553,58 @@
           <div class="gap"></div>
           <p class="job-title black" id="cars">Cars</p>
           <div class="gap-small"></div>
-          <div data-aos="fade-up">
-            <img src="./Assets/cars1.png" class="w-100" />
-            <img src="./Assets/cars2.png" class="w-100" />
-            <img src="./Assets/cars3.png" class="w-100" />
+          <div class="car-scroll-height">
+            <div class="car-scroll-wrapper">
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_1.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_2.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_3.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_4.png" />
+              </div>
+              <div class="scroll-car">
+                <img class="width" src="./Assets/cars/car_5.png" />
+              </div>
+              <div class="scroll-car">
+                <img class="width" src="./Assets/cars/car_6.JPG" />
+              </div>
+              <div class="scroll-car">
+                <img class="width" src="./Assets/cars/car_7.JPG" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_8.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_9.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_10.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_11.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_12.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_13.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_14.png" />
+              </div>
+              <div class="scroll-car">
+                <img src="./Assets/cars/car_15.png" />
+              </div>
+              <div class="scroll-car">
+                <img class="width" src="./Assets/cars/alonso.JPG" />
+              </div>
+              <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            </div>
           </div>
         </section>
 
@@ -1311,7 +1675,10 @@
           <div class="bottom-left m-3 ml-sm-5 d-xl-none">
             <p class="conMes white sansSerifBldFLF-medium">Let's catch up!</p>
             <div class="contact-for-responsive">
-              <p class="white sansSerifBookFLF-medium">
+              <p
+                onclick="window.open('mailto:richard_875@me.com', '_blank');"
+                class="white sansSerifBookFLF-medium"
+              >
                 Contact me&nbsp;&nbsp;&nbsp;<i
                   class="fa fa-angle-right pink position-relative"
                   aria-hidden="true"
@@ -1375,7 +1742,7 @@
               </div>
 
               <p class="contact-header-for-mobile sansSerifBldFLF-medium">
-                richardlee<span class="pink">.dev</span>
+                richard-lee<span class="pink">.com</span>
               </p>
               <div class="contact-info-for-mobile white sansSerifFLF-demibold">
                 I promise that you'll never find another like me!
@@ -1384,7 +1751,8 @@
                 References on request
               </div>
               <div class="contact-info-for-mobile white sansSerifFLF-demibold">
-                2020 A Richard Lee’s Production
+                <span data-bind="text: productionYear"></span>&nbsp;A Richard
+                Lee’s Production
               </div>
             </div>
           </div>
@@ -1437,7 +1805,7 @@
                 <div
                   class="website-icon-for-tablet position-absolute white sansSerifBldFLF-medium d-none d-sm-block d-xl-none pink"
                 >
-                  <span class="white">richardlee</span>.dev
+                  <span class="white">richard-lee</span>.com
                 </div>
                 <p class="bottomMessage d-sm-none d-xl-block">
                   I promise that you'll never find another like me!
@@ -1461,34 +1829,36 @@
               <div class="d-flex flex-row white">
                 <div class="d-sm-none d-xl-block">
                   <div class="bottomLink white sansSerifBldFLF-medium">
-                    richardlee.dev
+                    richard-lee.com
                   </div>
                   <div style="height: 1vw"></div>
                   <a
-                    style="cursor: pointer"
                     onclick="toHome()"
-                    class="bottomEles sansSerifBookFLF-medium white"
+                    class="bottomEles sansSerifBookFLF-medium white cursor-pointer"
                     >Home</a
                   >
                   <div class="h06vw"></div>
                   <a
-                    style="cursor: pointer"
+                    onclick="introduction()"
+                    class="bottomEles sansSerifBookFLF-medium white cursor-pointer"
+                    >Introduction</a
+                  >
+                  <div class="h06vw"></div>
+                  <a
                     onclick="internExperienceAndProjects()"
-                    class="bottomEles sansSerifBookFLF-medium white"
+                    class="bottomEles sansSerifBookFLF-medium white cursor-pointer"
                     >Intern & Projects</a
                   >
                   <div class="h06vw"></div>
                   <a
-                    style="cursor: pointer"
                     onclick="volunteeringAndOthers()"
-                    class="bottomEles sansSerifBookFLF-medium white"
+                    class="bottomEles sansSerifBookFLF-medium white cursor-pointer"
                     >Volunteering & Employments</a
                   >
                   <div class="h06vw"></div>
                   <a
-                    style="cursor: pointer"
                     onclick="personalStatements()"
-                    class="bottomEles sansSerifBookFLF-medium white"
+                    class="bottomEles sansSerifBookFLF-medium white cursor-pointer"
                     >Hobbies & contact</a
                   >
                 </div>
@@ -1502,8 +1872,6 @@
                     Phone
                   </div>
                   <div class="h05vw d-sm-none d-xl-block"></div>
-                  <div class="inputLine w13vw d-sm-none d-xl-block"></div>
-                  <div class="h06vw d-sm-none d-xl-block"></div>
                   <a
                     href="tel:+642108228112"
                     class="bottomEles sansSerifBookFLF-medium white f09vw"
@@ -1517,8 +1885,6 @@
                     Email
                   </div>
                   <div class="h05vw d-sm-none d-xl-block"></div>
-                  <div class="inputLine w13vw d-sm-none d-xl-block"></div>
-                  <div class="h06vw"></div>
                   <a
                     href="mailto:richard_875@me.com"
                     target="_blank"
@@ -1546,7 +1912,6 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script type="text/javascript" src="./javascript.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", function (e) {

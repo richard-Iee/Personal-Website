@@ -822,13 +822,4 @@
   .pic-summary-border {
     border-right: 1px solid #dee2e6;
   }
-
-  .scrollDown:hover {
-    top: 29.8vw;
-    left: 36.45vw;
-  }
-
-  .scrollDown div:hover {
-    font-size: 6vw;
-  }
 }

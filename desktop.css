@@ -495,12 +495,10 @@ body.fade {
   top: 30vw;
   z-index: 10;
   cursor: pointer;
-  transition: 0.2s;
 }
 
 .scrollDown div {
   font-size: 5.7vw;
-  transition: 0.2s;
 }
 
 .scrollDown i {

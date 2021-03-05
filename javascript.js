@@ -2,7 +2,7 @@ var myViewModel = {
   personalIntroduction:
     "I am a highly motivated and organised individual, who demonstrates \
     the qualities of independent and critical thinking through my \
-    university, work, and hobby life. With a strong attention to detail, \
+    university, work, and hobby life. With strong attention to detail, \
     I consistently meet personal and professional goals on time and to an \
     excellent standard.",
   productionYear: new Date().getFullYear(),

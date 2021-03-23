@@ -765,9 +765,8 @@
 
   /* Arrow */
   .arrow-wrapper {
-    position: absolute;
-    top: 145vh;
-    left: 70vw;
+    position: relative;
+    bottom: 12vw;
     width: 10vw;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);

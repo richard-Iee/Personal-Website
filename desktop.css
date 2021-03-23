@@ -472,12 +472,12 @@ body.fade {
   margin-top: 3vw;
   width: 37%;
   height: 7.5%;
+  transition: 0.3s;
 }
 
 .catchUp:hover {
   background-color: white;
   color: black;
-  transition: 0.3s;
 }
 
 .catchUpInside {

@@ -821,4 +821,12 @@
   .pic-summary-border {
     border-right: 1px solid #dee2e6;
   }
+  .scrollDown {
+    opacity: 0.9;
+    transition: 0.2s;
+  }
+
+  .scrollDown:hover {
+    opacity: 1;
+  }
 }

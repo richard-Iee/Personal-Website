@@ -12,10 +12,11 @@ This is my personal website, it's got all my projects and experiences on it. Fee
 
 # Table of Contents
 
-- Home and Introduction
+- Home
+- Introduction
 - Experience & Projects
 - Volunteering & Employments
-- Contact
+- Hobbies & Contact
 
 # License
 

@@ -32,6 +32,7 @@
 }
 
 .desktop-nav-menu:hover .desktop-nav-menu-logo,
+.desktop-nav-menu:hover .desktop-menubar,
 .desktop-nav-menu:hover .prograss-overlay-wrapper,
 .desktop-nav-menu:hover .side-icon-wrapper {
   opacity: 0;
@@ -55,12 +56,9 @@
   z-index: 10;
 }
 
-.breathing-light {
-  height: 10px;
-  width: 10px;
+.desktop-menubar {
   position: fixed;
-  right: 0.9125vw;
-  border-radius: 50%;
+  right: 0.85vw;
   z-index: 29;
 }
 
@@ -104,6 +102,7 @@
   z-index: 5;
 }
 
+.desktop-nav-menu .desktop-menubar,
 .desktop-nav-menu .prograss-overlay-wrapper {
   transition: 0.2s;
   transition-delay: 0.85s !important;

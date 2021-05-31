@@ -57,8 +57,7 @@
 }
 
 .desktop-menubar {
-  position: fixed;
-  right: 0.85vw;
+  margin: 0 auto;
   z-index: 29;
 }
 
@@ -111,6 +110,7 @@
 .desktop-nav-menu .side-icon-wrapper {
   height: 5vw;
   width: 1.1px;
+  margin-bottom: 17vh;
   display: flex;
   flex-direction: column;
   transition: 0.2s;

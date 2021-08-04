@@ -140,6 +140,10 @@ $(".catchUp").click(() =>
   $("html, body").animate({ scrollTop: $(document).height() }, 100)
 );
 
+var myName = () => {
+  window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+};
+
 var mobileDevice = {
   Android: () => navigator.userAgent.match(/Android/i),
   BlackBerry: () => navigator.userAgent.match(/BlackBerry/i),

@@ -61,6 +61,10 @@
   z-index: 29;
 }
 
+.desktop-menubar .nav-bar {
+  color: #2a3344;
+}
+
 .blink {
   background: transparent;
   z-index: 29;

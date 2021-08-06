@@ -73,6 +73,10 @@
   color: rgb(38, 145, 238);
 }
 
+.dark-mode-theme .desktop-menubar .nav-bar {
+  color: #0c0c0c;
+}
+
 .dark-mode-theme .summary-canary-logo {
   content: url("./Assets/canary-white.png");
   transition: 0.3s;

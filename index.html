@@ -109,7 +109,7 @@
     <link rel="preload" href="./Assets/2.JPG" as="image" />
   </head>
 
-  <body>
+  <body onload="websiteLoaded()">
     <script>
       document.body.className = "fade";
     </script>
@@ -1960,12 +1960,6 @@
     <script>
       document.addEventListener("DOMContentLoaded", function (e) {
         document.body.className = "";
-      });
-    </script>
-    <script>
-      $(window).on("load", () => {
-        $(".loading-wrapper").fadeOut("slow");
-        $("html").css("overflow-y", "scroll");
       });
     </script>
   </body>

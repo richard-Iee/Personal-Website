@@ -209,5 +209,10 @@ slider.addEventListener("mousemove", (e) => {
   console.log(walk);
 });
 
+const websiteLoaded = () => {
+  $(".loading-wrapper").fadeOut("slow");
+  $("html").css("overflow-y", "scroll");
+};
+
 // enabke aos
 AOS.init();

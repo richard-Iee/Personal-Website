@@ -67,7 +67,7 @@
     />
 
     <!-- Meta Tags Generated via http://heymeta.com -->
-    <link rel="icon" href="./Assets/myIcon.png" />
+    <link rel="icon" href="./Assets/memoji.png" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -113,6 +113,9 @@
     <script>
       document.body.className = "fade";
     </script>
+    <div class="loading-wrapper">
+      <div class="sp sp-hydrogen"></div>
+    </div>
     <div id="dark-mode">
       <!-- Desktop nav menu -->
       <div class="desktop-nav-menu d-none d-xl-flex">
@@ -1957,6 +1960,12 @@
     <script>
       document.addEventListener("DOMContentLoaded", function (e) {
         document.body.className = "";
+      });
+    </script>
+    <script>
+      $(window).on("load", () => {
+        $(".loading-wrapper").fadeOut("slow");
+        $("html").css("overflow-y", "scroll");
       });
     </script>
   </body>

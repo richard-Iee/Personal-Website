@@ -203,6 +203,16 @@
   transition: 0.3s;
 }
 
+.usyd-logo {
+  content: url("./Assets/usyd-black.svg");
+  transition: 0.3s;
+}
+
+.wdhb-logo {
+  content: url("./Assets/wdhb-black.png");
+  transition: 0.3s;
+}
+
 /* --------------------------------------- */
 
 .main {
@@ -366,9 +376,19 @@
   font-size: 1.3vw;
 }
 
+.usydLogo {
+  width: 10.5vw;
+  height: 3.6vw;
+  margin-top: 2vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./Assets/usyd-black.svg);
+}
+
 .uoaLogo {
   width: 15vw;
   height: 5vw;
+  margin-top: 4.5vw;
   background-repeat: no-repeat;
   background-size: cover;
   background-image: url(./Assets/uoa.png);
@@ -436,7 +456,7 @@ body.fade {
   overflow: hidden;
   background-image: url("./Assets/BACKDROP_DESIGN_VECTOR_16/Ultra\ Violet\ Galactic\ Background\ Free\ Vector.jpg");
   background-size: auto 100%;
-  background-position: 5%;
+  background-position: 83%;
 }
 
 .frontRightPic {

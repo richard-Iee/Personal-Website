@@ -87,6 +87,21 @@
   transition: 0.3s;
 }
 
+.dark-mode-theme .usyd-logo {
+  content: url("./Assets/usyd-white.svg");
+  transition: 0.3s;
+}
+
+.dark-mode-theme .wdhb-logo {
+  content: url("./Assets/wdhb-white.png");
+  transition: 0.3s;
+}
+
+.dark-mode-theme .usydLogo {
+  background-image: url(./Assets/usyd-white.svg);
+  transition: 0.3s;
+}
+
 .dark-mode-theme .skill-set {
   background-color: rgb(38, 145, 238);
 }

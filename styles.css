@@ -91,9 +91,14 @@
     line-height: 7.5vw;
   }
 
+  .usydLogo {
+    width: 40vw;
+    height: 13.8vw;
+  }
+
   .uoaLogo {
-    width: 60vw;
-    height: 20vw;
+    width: 45vw;
+    height: 15vw;
   }
 
   .nelsonCollegeLogo {
@@ -436,6 +441,11 @@
   .personal-description {
     font-size: 2.3vw;
     line-height: 4vw;
+  }
+
+  .usydLogo {
+    width: 22vw;
+    height: 7.6vw;
   }
 
   .uoaLogo {

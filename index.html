@@ -148,7 +148,7 @@
     </script>
     <div id="dark-mode">
       <!-- Desktop nav menu -->
-      <div class="desktop-nav-menu d-none d-xl-flex">
+      <div id="homeDesktopNavMenu" class="desktop-nav-menu d-none d-xl-flex">
         <div class="desktop-menubar">
           <div
             style="width: 1.8vw; height: 1.8vw"
@@ -401,7 +401,7 @@
           </div>
         </div>
 
-        <section class="s1 d-flex">
+        <section id="homeS1" class="s1 d-flex">
           <div
             class="frontLeftPic white d-flex justify-content-center pt-5 pb-2"
           >
@@ -450,7 +450,7 @@
                   >hello@richard-lee.com
                 </span>
               </p>
-              <div class="catchUp">
+              <div id="homeCatchUp" class="catchUp">
                 <a
                   class="catchUpInside h-100 w-100 d-flex align-items-center justify-content-center sansSerifFLF-demibold"
                   >Let’s catch up!</a
@@ -494,7 +494,7 @@
               <p class="white sansSerifBookFLF-medium pt-3">View My CV</p>
             </a>
           </div>
-          <a class="scrollDown d-none d-sm-block">
+          <a id="homeScrollDownButton" class="scrollDown d-none d-sm-block">
             <div
               class="fas fa-2x fa-circle d-flex align-items-center justify-content-center white shadow"
             >
@@ -504,10 +504,6 @@
             </div>
           </a>
         </section>
-
-
-       
-
 
         <div
           class="summary-for-responsive pl-4 text-justify d-xl-none pb-4 pb-sm-0"
@@ -527,15 +523,8 @@
           >
         </div>
 
-
-        <div style="padding-top: 100px;" class="content-lazyload">
-
-       
-        
-        
-        </div>
-      
-      
+        <!-- Server rendered content -->
+        <div style="padding-top: 100px" class="content-lazyload"></div>
       </div>
     </div>
     <script src="Scripts/js/aos.js"></script>
@@ -543,7 +532,10 @@
     <script src="Scripts/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./javascript.js"></script>
     <script>
-      document.addEventListener("DOMContentLoaded", (e) => document.body.className = "");
+      document.addEventListener(
+        "DOMContentLoaded",
+        (e) => (document.body.className = "")
+      );
     </script>
   </body>
 </html>

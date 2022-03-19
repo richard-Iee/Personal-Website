@@ -40,7 +40,7 @@ const lazyload = () => {
               Hope you enjoy my page and have a great day!
             </span>
           </p>
-          <div class="gap"></div>
+          <div class="gap d-none d-xl-block"></div>
         </div>
         <div data-aos="fade-up" class="pics-summary d-flex flex-column flex-xl-row">
           <div

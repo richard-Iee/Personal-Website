@@ -303,6 +303,8 @@
   }
 
   .intro-description {
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 25px;
     text-align: justify;
     line-height: 9vw;

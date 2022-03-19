@@ -348,7 +348,7 @@
   }
 
   .s1 {
-    height: 55vw;
+    height: 45vw;
   }
 
   .s2 {
@@ -483,7 +483,7 @@
   .scrollDown {
     position: absolute;
     left: 90vw;
-    top: 51.5vw;
+    top: 41.5vw;
     z-index: 10;
   }
 

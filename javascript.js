@@ -1559,8 +1559,7 @@ const lazyload=()=>{
      if(!$(this).attr("loaded") && wt<=ob && wb >= ot){
         $(this).html(SERVER_RENDER_CONTENT);
         $(this).attr("loaded",true);
-
-
+        $(this).css("padding-top", "");
      }
   });
 }

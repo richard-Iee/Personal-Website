@@ -492,7 +492,7 @@ body.fade {
 }
 
 .catchUp {
-  margin-top: 3vw;
+  margin-top: 1.5vw;
   width: 37%;
   height: 7.5%;
   transition: 0.3s;
@@ -529,7 +529,8 @@ body.fade {
 }
 
 .iconsFront {
-  padding-top: 3vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
   word-spacing: 2.2vw;
 }
 

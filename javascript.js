@@ -35,24 +35,13 @@ const lazyload = () => {
          ><u>email me</u></span
        >.
        <span class="desktop-intro-description">
-         Simply get started by hovering over the navigation bar, hope you
+         Simply get started by hovering over the <span class="sansSerifFLF-demibold yellow">navigation bar</span>, hope you
          enjoy my page and have a great day!
        </span>
        <span class="mobile-intro-description">
          Hope you enjoy my page and have a great day!
        </span>
-     </p>
-     <div style="height: 5vw" class="d-flex flex-row">
-       <div class="col-9"></div>
-       <div class="col-3">
-         <div class="arrow-wrapper">
-           <div class="arrow">
-             <div class="curve"></div>
-             <div class="point"></div>
-           </div>
-         </div>
-       </div>
-     </div>
+     </p>     
      <div class="gap"></div>
     </div>
     <div

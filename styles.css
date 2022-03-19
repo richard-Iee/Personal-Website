@@ -710,17 +710,6 @@
   .scroll-car img {
     height: 55vw;
   }
-
-  .angle-right {
-    display: inline-block;
-    font-style: normal;
-    position: relative;
-    width: 0.5em;
-    height: 0.5em;
-    border-right: 0.1em solid #ff55be;
-    border-top: 0.1em solid #ff55be;
-    transform: rotate(45deg);
-  }
 }
 
 @media only screen and (min-width: 1199.99px) {
@@ -867,6 +856,17 @@
   justify-content: center;
   background-color: #003366;
   z-index: 9999;
+}
+
+.angle-right {
+  display: inline-block;
+  font-style: normal;
+  position: relative;
+  width: 0.5em;
+  height: 0.5em;
+  border-right: 0.1em solid #ff55be;
+  border-top: 0.1em solid #ff55be;
+  transform: rotate(45deg);
 }
 
 .sp {

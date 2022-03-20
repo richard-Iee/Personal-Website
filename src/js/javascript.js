@@ -1514,8 +1514,8 @@ const checkFocus = () => {
   }
 };
 
-// Check page focus every 100 milliseconds if haven't landed
-const checkLandingInterval = setInterval(checkFocus, 100);
+// Check page focus every 1 millisecond if haven't landed
+const checkLandingInterval = setInterval(checkFocus, 1);
 
 $(".personalIntroduction")
   .get()

@@ -194,22 +194,22 @@
 }
 
 .summary-canary-logo {
-  content: url("./Assets/canary.svg");
+  content: url("/Assets/canary.svg");
   transition: 0.3s;
 }
 
 .nasdaq-logo {
-  content: url("./Assets/NASDAQ_Logo_black.svg");
+  content: url("/Assets/NASDAQ_Logo_black.svg");
   transition: 0.3s;
 }
 
 .usyd-logo {
-  content: url("./Assets/usyd-black.svg");
+  content: url("/Assets/usyd-black.svg");
   transition: 0.3s;
 }
 
 .wdhb-logo {
-  content: url("./Assets/wdhb-black.png");
+  content: url("/Assets/wdhb-black.png");
   transition: 0.3s;
 }
 
@@ -246,7 +246,7 @@
 .s3 {
   /* scroll-snap-align: start; */
   height: 100vh;
-  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
+  background-image: url("/Assets/sfondo-astratto-colorato-con-elementi-di-memphis/copyForWebsite-01.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 0%;
@@ -382,7 +382,7 @@
   margin-top: 2vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./Assets/usyd-black.svg);
+  background-image: url(/Assets/usyd-black.svg);
 }
 
 .uoaLogo {
@@ -391,7 +391,7 @@
   margin-top: 4.5vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./Assets/uoa.png);
+  background-image: url(/Assets/uoa.png);
 }
 
 .nelsonCollegeLogo {
@@ -400,7 +400,7 @@
   margin-top: 4.5vw;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(./Assets/nelsoncollegeLogo.png);
+  background-image: url(/Assets/nelsoncollegeLogo.png);
 }
 
 .top-one-normal {
@@ -454,7 +454,7 @@ body.fade {
   height: 100% !important;
   flex: 0.405;
   overflow: hidden;
-  background-image: url("./Assets/BACKDROP_DESIGN_VECTOR_16/Ultra\ Violet\ Galactic\ Background\ Free\ Vector.jpg");
+  background-image: url("/Assets/BACKDROP_DESIGN_VECTOR_16/Ultra\ Violet\ Galactic\ Background\ Free\ Vector.jpg");
   background-size: auto 100%;
   background-position: 83%;
 }
@@ -468,7 +468,7 @@ body.fade {
 .myPic {
   height: 72.8%;
   background-position: center;
-  background-image: url("./Assets/2.JPG");
+  background-image: url("/Assets/2.JPG");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -718,7 +718,7 @@ body.fade {
   margin-bottom: 0.5vw;
   height: 1.5rem;
   width: 1.5rem;
-  background-image: url("./Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
+  background-image: url("/Assets/sfondo-astratto-colorato-con-elementi-di-memphis/dimond.png");
   background-repeat: no-repeat;
   background-size: cover;
 }

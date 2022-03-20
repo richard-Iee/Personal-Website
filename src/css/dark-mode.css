@@ -78,27 +78,27 @@
 }
 
 .dark-mode-theme .summary-canary-logo {
-  content: url("./Assets/canary-white.png");
+  content: url("/Assets/canary-white.png");
   transition: 0.3s;
 }
 
 .dark-mode-theme .nasdaq-logo {
-  content: url("./Assets/NASDAQ_Logo_white.svg");
+  content: url("/Assets/NASDAQ_Logo_white.svg");
   transition: 0.3s;
 }
 
 .dark-mode-theme .usyd-logo {
-  content: url("./Assets/usyd-white.svg");
+  content: url("/Assets/usyd-white.svg");
   transition: 0.3s;
 }
 
 .dark-mode-theme .wdhb-logo {
-  content: url("./Assets/wdhb-white.png");
+  content: url("/Assets/wdhb-white.png");
   transition: 0.3s;
 }
 
 .dark-mode-theme .usydLogo {
-  background-image: url(./Assets/usyd-white.svg);
+  background-image: url(/Assets/usyd-white.svg);
   transition: 0.3s;
 }
 

@@ -1257,7 +1257,7 @@ const lazyload = () => {
                 class="footer-button d-flex align-items-center justify-content-center white sansSerifFLF-demibold"
                 style="flex: 0.6; margin-left: 1.5vw"
               >
-                View my CV
+                View my Resume
               </a>
             </div>
 
@@ -1314,7 +1314,7 @@ const lazyload = () => {
                   class="viewRes d-flex align-items-center justify-content-center white sansSerifBookFLF-medium"
                   style="flex: 0.6; margin-left: 1.5vw"
                 >
-                  View my CV
+                  View my Resume
                 </a>
               </div>
               <div

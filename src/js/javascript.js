@@ -1,10 +1,10 @@
 const lazyload = () => {
-  var wt = $(window).scrollTop(); //* top of the window
-  var wb = wt + $(window).height(); //* bottom of the window
+  let wt = $(window).scrollTop(); //* top of the window
+  let wb = wt + $(window).height(); //* bottom of the window
 
   $(".content-lazyload").each(function () {
-    var ot = $(this).offset().top; //* top of object (i.e. advertising div)
-    var ob = ot + $(this).height(); //* bottom of object
+    let ot = $(this).offset().top; //* top of object (i.e. advertising div)
+    let ob = ot + $(this).height(); //* bottom of object
 
     let SERVER_RENDER_CONTENT = /*html*/ `
       <section id="s2Render" class="s2 sansSerifFLF-demibold">
@@ -1473,58 +1473,58 @@ $(this).scrollTop() == 0
   ? $(".fa-user").fadeIn(200)
   : $(".fa-user").css("display", "none");
 
-var toHome = () => $("html, body").animate({ scrollTop: 0 }, 100);
+let toHome = () => $("html, body").animate({ scrollTop: 0 }, 100);
 
-var introduction = () =>
+let introduction = () =>
   $("html, body").animate({ scrollTop: $("#s2Render").offset().top }, 100);
 
-var internExperienceAndProjects = () =>
+let internExperienceAndProjects = () =>
   $("html, body").animate(
     { scrollTop: $("#internExperienceAndProjects").offset().top - 100 },
     100
   );
 
-var volunteeringAndOthers = () =>
+let volunteeringAndOthers = () =>
   $("html, body").animate(
     { scrollTop: $("#volunteeringAndOthers").offset().top - 100 },
     100
   );
 
-var personalStatements = () =>
+let personalStatements = () =>
   $("html, body").animate(
     { scrollTop: $("#personalStatements").offset().top - 100 },
     100
   );
 
-var toBottom = () =>
+let toBottom = () =>
   $("html, body").animate({ scrollTop: $(document).height() }, 100);
 
 // When the user scrolls the page, execute function
 window.onscroll = () => {
   let replaceClass = (id, newClass) => {
-    var className = $(`#${id}`).attr("class");
-    var elem = $(`#${id}`);
+    let className = $(`#${id}`).attr("class");
+    let elem = $(`#${id}`);
     if (elem.hasClass(className)) elem.removeClass(className);
     elem.addClass(newClass);
   };
 
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height =
+  let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  let height =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
+  let scrolled = (winScroll / height) * 100;
   document.getElementById("prograssOverlayBar").style.height = scrolled + "%";
 
-  var scrollPosition = $(this).scrollTop();
-  var internExperienceAndProjects = $("#internExperienceAndProjects").offset()
+  let scrollPosition = $(this).scrollTop();
+  let internExperienceAndProjects = $("#internExperienceAndProjects").offset()
     .top;
-  var skills = $("#skills").offset().top;
-  var volunteeringAndOthers = $("#volunteeringAndOthers").offset().top;
-  var employments = $("#employments").offset().top;
-  var personalStatements = $("#personalStatements").offset().top;
-  var education = $("#education").offset().top;
-  var cars = $("#cars").offset().top;
-  var contact = $("#contact").offset().top;
+  let skills = $("#skills").offset().top;
+  let volunteeringAndOthers = $("#volunteeringAndOthers").offset().top;
+  let employments = $("#employments").offset().top;
+  let personalStatements = $("#personalStatements").offset().top;
+  let education = $("#education").offset().top;
+  let cars = $("#cars").offset().top;
+  let contact = $("#contact").offset().top;
 
   if (scrollPosition < internExperienceAndProjects)
     replaceClass("sideIconDesktopNav", "fas fa-user");
@@ -1566,23 +1566,23 @@ window.onscroll = () => {
     ? $(".mobile-util-menu").css("right", "0vw")
     : $(".mobile-util-menu").css("right", "-15vw");
 
-  var top = $(window).scrollTop() + $(window).height(),
+  let top = $(window).scrollTop() + $(window).height(),
     isVisible = top > $(".skill-set").offset().top;
 
   $(".skill-set").toggleClass("animate", isVisible);
 };
 
-var starNumber = () => 10 + Math.floor(Math.random() * Math.floor(30));
+let starNumber = () => 10 + Math.floor(Math.random() * Math.floor(30));
 
-var starSpecs = (min, max) => {
+let starSpecs = (min, max) => {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-var starPosition = (max) => Math.floor(Math.random() * Math.floor(max));
+let starPosition = (max) => Math.floor(Math.random() * Math.floor(max));
 
-for (var i = 0; i <= starNumber(); i++) {
+for (let i = 0; i <= starNumber(); i++) {
   starDimensions = starSpecs(100, 500) / 1000;
   starXPos = starPosition(1000);
   starYPos = starPosition(1000) / 10;
@@ -1597,7 +1597,7 @@ $(".catchUp").click(() =>
   $("html, body").animate({ scrollTop: $(document).height() }, 100)
 );
 
-var mobileDevice = {
+let mobileDevice = {
   Android: () => navigator.userAgent.match(/Android/i),
   BlackBerry: () => navigator.userAgent.match(/BlackBerry/i),
   iOS: () => navigator.userAgent.match(/iPhone|iPad|iPod/i),

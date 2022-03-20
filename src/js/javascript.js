@@ -1462,6 +1462,7 @@ I consistently meet personal and professional goals on time and to an \
 excellent standard.";
 const PRODUCTION_YEAR = new Date().getFullYear();
 const PHONE_REPAIR_EXPERIENCE = new Date().getFullYear() - 2015;
+const IS_SAFARI = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 let LOADED = false;
 
@@ -1586,9 +1587,10 @@ for (let i = 0; i <= starNumber(); i++) {
   starDimensions = starSpecs(100, 500) / 1000;
   starXPos = starPosition(1000);
   starYPos = starPosition(1000) / 10;
-  $(".frontLeftPic").prepend(
-    `<div class="stars blink d-none d-xl-flex" style="top: ${starYPos}vh; left: ${starXPos}px; width: ${starDimensions}vw; height: ${starDimensions}vw"></div>`
-  );
+  if (!IS_SAFARI)
+    $(".frontLeftPic").prepend(
+      `<div class="stars blink d-none d-xl-flex" style="top: ${starYPos}vh; left: ${starXPos}px; width: ${starDimensions}vw; height: ${starDimensions}vw"></div>`
+    );
 }
 
 $(".scrollDown").click(() => introduction());

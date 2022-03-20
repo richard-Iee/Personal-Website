@@ -1513,18 +1513,18 @@ const landingScreen = () => {
   `);
 };
 
-// if (!landed) {
-const checkFocus = () => {
-  if (document.hasFocus()) {
-    landed = true;
-    landingScreen();
-    clearInterval(checkLandingInterval);
-  }
-};
+if (!landed) {
+  const checkFocus = () => {
+    if (document.hasFocus()) {
+      landed = true;
+      landingScreen();
+      clearInterval(checkLandingInterval);
+    }
+  };
 
-// Check page focus every 100 millisecond if haven't landed
-const checkLandingInterval = setInterval(checkFocus, 100);
-// }
+  // Check page focus every 10 millisecond if haven't landed
+  const checkLandingInterval = setInterval(checkFocus, 10);
+}
 
 $(".personalIntroduction")
   .get()

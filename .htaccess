@@ -5,7 +5,7 @@ RewriteCond %{HTTP_HOST} ^richard-lee.com[nc]
 RewriteRule ^(.*)$ http://www.richard-lee.com/$1 [r=301,nc]
 
 //Caching schema
-<FilesMatch "\.(jpg|png|svg|css|js|html|woff|)$">
+<FilesMatch "\.(jpg|png|svg|css|js|html|woff|woff2)$">
 Header set Cache-Control "public, max-age=72576000"
 </FilesMatch>
  

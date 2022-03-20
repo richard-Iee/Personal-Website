@@ -847,7 +847,6 @@ const lazyload = () => {
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
-        <div class="gap d-block d-sm-none"></div>
         <p class="date-range">
           Dec<span class="d-none d-sm-inline-block">ember</span> 2019 – Mar<span
             class="d-none d-sm-inline-block"
@@ -870,7 +869,6 @@ const lazyload = () => {
           </div>
           <div class="title-box-right"></div>
         </div>
-        <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>

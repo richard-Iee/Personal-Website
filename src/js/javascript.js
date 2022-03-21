@@ -1469,8 +1469,7 @@ let loaded = false;
 if (document.hasFocus()) landed = true;
 
 const landingScreen = () => {
-  $("#splash").remove();
-  $("#dark-mode").after(`
+  let SPLASH = /*html*/ `
   <div id="splash">
       <div class="anim">
         <div id="loader">
@@ -1510,7 +1509,10 @@ const landingScreen = () => {
         </div>
       </div>
     </div>
-  `);
+  `;
+
+  $("#splash").remove();
+  $("#dark-mode").after(SPLASH);
 };
 
 if (!landed) {

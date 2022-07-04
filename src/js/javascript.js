@@ -1275,7 +1275,8 @@ const lazyload = () => {
             </div>
             <div class="d-flex flex-row mt-3">
               <img height="30px" class="mr-3" src="Assets/flag/australia.png" />
-              <img height="30px" src="Assets/flag/aboriginal.png" />
+              <img height="30px" class="mr-3" src="Assets/flag/aboriginal.png" />
+              <img height="30px" src="Assets/flag/torresStrait.png" />
             </div>
           </div>
         </div>
@@ -1333,7 +1334,8 @@ const lazyload = () => {
               </p>
               <div class="d-flex flex-row flag-for-tablet">
                 <img height="30px" class="mr-3" src="Assets/flag/australia.png" />
-                <img height="30px" src="Assets/flag/aboriginal.png" />
+                <img height="30px" class="mr-3" src="Assets/flag/aboriginal.png" />
+                <img height="30px" src="Assets/flag/torresStrait.png" />
               </div>
             </div>
           </div>

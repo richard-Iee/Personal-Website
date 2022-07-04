@@ -1,4 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a0453cdb-c3dd-4f26-9e9f-3667bb7455a8/deploy-status)](https://app.netlify.com/sites/richardleedev/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/1d917ce8-19b0-47b0-954b-f48f9f31a0a3/deploy-status)](https://app.netlify.com/sites/richard-lee/deploys)
 
 ### Come have a look: <a href="https://richard-lee.com/" target="_blank">richard-lee.com</a>
 

@@ -74,9 +74,9 @@ const lazyload = () => {
           <div
             class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
           >
-            <img width="35%" class="wdhb-logo d-block d-sm-none" />
-            <img width="25%" class="wdhb-logo d-none d-sm-block d-xl-none" />
-            <img width="55%" class="wdhb-logo d-none d-xl-block" />
+            <img width="50%" class="nz-gov-logo d-block d-sm-none" />
+            <img width="35%" class="nz-gov-logo d-none d-sm-block d-xl-none" />
+            <img width="70%" class="nz-gov-logo d-none d-xl-block" />
           </div>
           <div
             class="pic-summary pic-summary-border-last d-flex align-items-center justify-content-center"
@@ -100,7 +100,7 @@ const lazyload = () => {
         <div class="gap d-sm-none"></div>
         <div class="title-box">
           <div class="h-100">
-            <p class="job-title red">Information Systems Developer (Fixed term)</p>
+            <p class="job-title red mb-0">Information Systems Developer (Fixed term)</p>
           </div>
           <div class="title-box-right d-none d-sm-flex">
             <img class="wdhb-logo" height="150%" />
@@ -108,7 +108,8 @@ const lazyload = () => {
         </div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
-        <div class="gap d-block d-sm-none"></div>
+        <div class="gap-small d-block d-sm-none mt-1"></div>
+        <p class="date-range pt-0">Government of New Zealand, WDHB, Auckland North Shore Hospital</p>
         <p class="date-range">
           Aug<span class="d-none d-sm-inline-block">ust</span> 2021 — Feb<span
             class="d-none d-sm-inline-block"

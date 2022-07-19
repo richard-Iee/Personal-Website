@@ -97,6 +97,11 @@
   transition: 0.3s;
 }
 
+.dark-mode-theme .nz-gov-logo {
+  content: url("/Assets/nz-gov-white.png");
+  transition: 0.3s;
+}
+
 .dark-mode-theme .usydLogo {
   background-image: url(/Assets/usyd-white.svg);
   transition: 0.3s;

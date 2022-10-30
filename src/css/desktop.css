@@ -193,6 +193,11 @@
   height: 200px;
 }
 
+.slik-logo {
+  content: url("/Assets/slik-black.svg");
+  transition: 0.3s;
+}
+
 .summary-canary-logo {
   content: url("/Assets/canary.svg");
   transition: 0.3s;

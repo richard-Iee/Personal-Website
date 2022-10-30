@@ -77,6 +77,11 @@
   color: #0c0c0c;
 }
 
+.dark-mode-theme .slik-logo {
+  content: url("/Assets/slik.svg");
+  transition: 0.3s;
+}
+
 .dark-mode-theme .summary-canary-logo {
   content: url("/Assets/canary-white.png");
   transition: 0.3s;

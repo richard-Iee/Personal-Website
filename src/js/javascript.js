@@ -12,7 +12,7 @@ const lazyload = () => {
           <p
             class="sansSerifFLF-medium intro-description job-title pt-4 pt-xl-5 mt-0 mt-xl-5 mb-0 mb-xl-5"
           >
-            <span class="sansSerifFLF-italic">G’day</span>, my name is
+            <span class="sansSerifFLF-italic">G'day</span>, my name is
             <span class="sansSerifFLF-demibold">Richard</span>, welcome to my little
             corner of the internet! I'm an undergraduate honours student at the
             <span
@@ -46,12 +46,12 @@ const lazyload = () => {
           <div
             class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
           >
-            <img width="45%" class="summary-canary-logo d-block d-sm-none" />
+            <img width="10%" class="slik-logo d-block d-sm-none" />
             <img
-              width="30%"
-              class="summary-canary-logo d-none d-sm-block d-xl-none"
+              width="7%"
+              class="slik-logo d-none d-sm-block d-xl-none"
             />
-            <img width="60%" class="summary-canary-logo d-none d-xl-block" />
+            <img width="20%" class="slik-logo d-none d-xl-block" />
           </div>
           <div
             class="pic-summary pic-summary-border d-flex align-items-center justify-content-center"
@@ -96,41 +96,68 @@ const lazyload = () => {
         <p class="medium-title">Work Experience</p>
         <hr />
         <div class="gap-small"></div>
-        <img class="wdhb-logo d-sm-none" width="35%" />
+        <img class="slik-logo d-sm-none" width="10%" />
         <div class="gap d-sm-none"></div>
         <div class="title-box">
           <div class="h-100">
-            <p class="job-title red mb-0">Information Systems Developer (Fixed term)</p>
+            <p class="job-title red">Creative Software Engineer</p>
           </div>
           <div class="title-box-right d-none d-sm-flex">
-            <img class="wdhb-logo" height="150%" />
+            <img class="slik-logo" height="100%" />
+          </div>
+        </div>
+        <div class="gap d-block d-sm-none"></div>
+        <p class="date-range">
+          SLIK Creative Agency&nbsp;&nbsp;|&nbsp;&nbsp;Jul<span class="d-none d-sm-inline-block">y</span> 2022 — Current&nbsp;&nbsp;|&nbsp;&nbsp;Sydney, Australia
+        </p>
+        <p class="job-description">
+          • Created Australia's first Metaverse virtual playground with Three.js and Blender for hosting virtual meetings and corporate events
+        </p>
+        <p class="job-description">
+          • Developed statically generated web apps with Gatsby for Nine News, including
+          <a class="red" href="https://impact-report.smh.com.au" target="_blank"
+            ><u>Sydney Morning Herald's Annual Impact Report</u></a
+          >
+        </p>
+        <p class="job-description">
+          • Migrated a legacy email builder app from Angular to React for better maintainability and redesigned its UI for a refined user experience
+        </p>
+        <p class="job-description">
+          - <span class="red">Tech stack</span>: React/Gatsby • Contentful • Node.js/Nest.js • MongoDB • Three.js • GSAP • Blender • Netlify • Heroku • AWS
+        </p>
+        <div class="gap"></div>
+        <img class="nz-gov-logo d-sm-none" width="45%" />
+        <div class="gap d-sm-none"></div>
+        <div class="title-box">
+          <div class="h-100">
+            <p class="job-title red mb-0">Software Engineer (Fixed term)</p>
+          </div>
+          <div class="title-box-right d-none d-sm-flex">
+            <img class="nz-gov-logo" height="100%" />
           </div>
         </div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap-small d-block d-sm-none mt-1"></div>
-        <p class="date-range pt-0">Government of New Zealand, WDHB, Auckland North Shore Hospital</p>
+        <p class="date-range pt-0">Government of New Zealand, Waitemata District Health Board</p>
         <p class="date-range">
           Aug<span class="d-none d-sm-inline-block">ust</span> 2021 — Feb<span
             class="d-none d-sm-inline-block"
             >ruary</span
           >
-          2022
+          2022&nbsp;&nbsp;|&nbsp;&nbsp;Auckland, New Zealand
         </p>
         <p class="job-description">
-          • Created a monitoring web app with Angular 2 and .Net 5 to monitor legacy
-          system status
+          • Developed and designed a monitoring web application with Angular and .NET Core to monitor hospitals' legacy system status
         </p>
         <p class="job-description">
-          • Created a Redis commander app to run Redis commands from a user interface
+          • Implemented and designed a bespoke management dashboard web application for the admin to manipulate data stored in Redis
         </p>
         <p class="job-description">
-          • Improved an applicationʼs Chrome lighthouse score by over 50% by
-          re-writing HTML table into CSS grid
+          • Improved Google Chrome's lighthouse score for an application by over 60% by redesigning the frontend layout structure
         </p>
         <p class="job-description">
-          - <span class="red">Tech stack</span>: ASP.NET • Angular 2 • C# • TypeScript
-          • mssql • Oracle SQL • Jira • Azure DevOps
+          - <span class="red">Tech stack</span>: Angular • .NET • Redis • C# • TypeScript • Oracle SQL Database • Jira • Azure DevOps
         </p>
         <div class="gap"></div>
         <img class="summary-canary-logo d-sm-none" width="35%" />
@@ -144,30 +171,26 @@ const lazyload = () => {
           </div>
         </div>
         <div class="gap d-block d-sm-none"></div>
-        <p class="date-range">
-          Sep<span class="d-none d-sm-inline-block">tember</span> 2020 — Aug<span
+        <p class="date-range">Canary Data Solutions Ltd.&nbsp;&nbsp;|&nbsp;&nbsp;Sep<span class="d-none d-sm-inline-block">tember</span> 2020 — Aug<span
             class="d-none d-sm-inline-block"
             >ust</span
           >
-          2021
+          2021&nbsp;&nbsp;|&nbsp;&nbsp;Auckland, New Zealand
         </p>
         <p class="job-description">
-          • Working in a team of 3, we improved the robustness of the system by
-          rewriting over 150 JavaScript files into TypeScript files
+          • Engaged and worked with clients from all sectors to develop custom applications to suit their business needs
         </p>
         <p class="job-description">
-          • Complete redesign of the company
+          • Complete redesign of the company website by incorporating modern design principles
           <a class="red" href="https://canary.co.nz/" target="_blank"
-            ><u>website</u></a
+            ><u>(https://www.canary.co.nz/)</u></a
           >
         </p>
         <p class="job-description">
-          • Communicate directly with clients to carry out feature requests and / or
-          to resolve problem report
+          • Reduced an application's runtime error by over 65% by migrating the backend server to TypeScript and introducing unit tests
         </p>
         <p class="job-description">
-          - <span class="red">Tech stack</span>: ASP.NET • C#/VB • TypeScript •
-          Knockout/Vue • mssql • TeamCity/Jenkins • TortoiseHG • Octopus Deploy
+          - <span class="red">Tech stack</span>: Vue • TypeScript • ASP.NET • C#/VB • Microsoft SQL Server • Knockout.js • Jenkins • TeamCity • Octopus
         </p>
         <div class="gap"></div>
         <img class="d-sm-none" src="./Assets/chancery.png" width="10%" />
@@ -209,33 +232,30 @@ const lazyload = () => {
         <div class="gap d-sm-none"></div>
         <div class="title-box">
           <div class="h-100">
-            <p class="job-title red">Junior Developer</p>
+            <p class="job-title red">Intern Software Developer</p>
           </div>
           <div class="title-box-right d-none d-sm-flex">
             <img src="./Assets/yourcar.png" height="60%" />
           </div>
         </div>
         <div class="gap d-block d-sm-none"></div>
-        <p class="date-range">
-          Jan<span class="d-none d-sm-inline-block">uary</span> 2020 — Apr<span
+        <p class="date-range">Yourcar (Startup)&nbsp;&nbsp;|&nbsp;&nbsp;Jan<span class="d-none d-sm-inline-block">uary</span> 2020 — Sep<span
             class="d-none d-sm-inline-block"
-            >il</span
+            >tember</span
           >
-          2021
+          2020&nbsp;&nbsp;|&nbsp;&nbsp;Auckland, New Zealand
         </p>
         <p class="job-description">
-          • Created a script that calculates and returns the number and percentage of
-          written-off New Zealand new vehicles after the first 18 months of purchase
+          • Developed an internal tool that calculates the write-off percentage of New Zealand new vehicles in the first 18 months of purchase
         </p>
         <p class="job-description">
-          • Improve the system durability by testing the front-end using cypress
+          • Improved company web application's durability by implementing a complete functional test on the frontend site using Cypress
         </p>
         <p class="job-description">
-          • Gained valuable experience of working in a fast-paced startup environment
+          • Gained valuable professional experience by working in a fast-paced startup environment
         </p>
         <p class="job-description">
-          - <span class="red">Tech stack</span>: Next.js • ReactJs • Node.js • GraphQL
-          • Apollo • PostgreSQL • Jest • Cypress • HubSpot • Coffee Making Skills!
+          - <span class="red">Skills gained</span>: React/Next.js • PostgreSQL • GraphQL • Postman API Testing • Jest • Cypress • HubSpot • Barista Skills! &#9749;
         </p>
         <div class="gap"></div>
         <img class="d-sm-none" src="./Assets/uoa.png" width="45%" />
@@ -249,15 +269,14 @@ const lazyload = () => {
           </div>
         </div>
         <div class="gap d-block d-sm-none"></div>
-        <p class="date-range">
-          Jan<span class="d-none d-sm-inline-block">uary</span> 2020 — Nov<span
+        <p class="date-range">The University of Auckland&nbsp;&nbsp;|&nbsp;&nbsp;Jan<span class="d-none d-sm-inline-block">uary</span> 2020 — Nov<span
             class="d-none d-sm-inline-block"
             >ember</span
           >
           2020&nbsp;&nbsp;|&nbsp;&nbsp;Marketing team
         </p>
         <p class="job-description">
-          • Working in a team of four, we rebuilt and designed Velocity (CIE)’s
+          • Working in a team of four, we rebuilt and designed Velocity (CIE)'s
           Website with Javascript and WordPress
         </p>
         <p class="job-description">• Maintenance of the Velocity Website</p>
@@ -278,6 +297,30 @@ const lazyload = () => {
         <div class="gap d-block d-sm-none"></div>
         <p class="medium-title">Software Projects</p>
         <hr />
+        <div class="title-box">
+          <div class="h-100 d-flex flex-row">
+            <p class="job-title red">
+              Leetcode Algorithm Practice Web Application <span style="cursor: pointer;" onclick="window.open('https://neetcode.richard-lee.com/',  '_blank');">(<u>Link</u>)</span>
+            </p>
+          </div>
+          <div class="title-box-right"></div>
+        </div>
+        <div class="gap d-block d-sm-none"></div>
+        <div class="gap d-block d-sm-none"></div>
+        <div class="gap d-block d-sm-none"></div>
+        <p class="job-description w-100">
+          • Designed and developed a coding practice web application to try out the new Vue Nuxt 3 framework
+        </p>
+        <p class="job-description w-100">
+          • Incorporated persistent data storage to store and retrieve user comments and track study progress
+        </p>
+        <p class="job-description w-100">
+          • Implemented IBM's Carbon Design System for user interface design to achieve a clean and streamlined user experience
+        </p>
+        <p class="job-description">
+          - <span class="red">Utilised</span>: Vue 3 • Nuxt 3 • TypeScript • Tailwind CSS • Carbon Design System • Caching • Persistent Data Storage
+        </p>
+        <div class="gap"></div>
         <div class="title-box">
           <div class="h-100 d-flex flex-row">
             <p class="job-title red">
@@ -391,7 +434,7 @@ const lazyload = () => {
         <div class="gap d-none d-sm-block d-lg-block d-xl-none"></div>
         <div class="title-box">
           <div class="h-100">
-            <p class="job-title red">News and information App</p>
+            <p class="job-title red">University of Auckland Morotsport Club Mobile Application</p>
           </div>
           <div class="w-25 d-none d-sm-block">
             <img loading="lazy" src="./Assets/appQR.png" class="qrCodeExpo" />
@@ -399,19 +442,16 @@ const lazyload = () => {
         </div>
         <div class="gap d-block d-sm-none"></div>
         <p class="job-description job-description-app">
-          • Developed an App for my University Club to share information and news, as
-          well as upcoming events
+          • Developed a cross-platform mobile App for my University Club to share news and upcoming events using React Native and Expo
         </p>
         <p class="job-description job-description-app">
-          • Developed an API for the App with the functionalities of GET and POST
+          • Created a backend API for the App with AWS DynamoDB and AWS Lambda using the Serverless framework
         </p>
         <p class="job-description job-description-app">
-          • Maintenance of the App, including posting new articles, fixing bugs and
-          issuing updates
+          • Maintenance of the App including posting new articles, fixing bugs and issuing updates
         </p>
         <p class="job-description">
-          - <span class="red">Utilised</span>: React Native • Expo • Node.js • AWS
-          DynamoDB • AWS Lambda • Serverless
+          - <span class="red">Utilised</span>: React Native • Expo • React Router • AWS DynamoDB • AWS Lambda • The Serverless Framework
         </p>
         <a
           href="https://github.com/richard875/Motorsport-Club"
@@ -741,7 +781,7 @@ const lazyload = () => {
           2014 and 2017
         </p>
         <p class="job-description w-100">
-          • Helped out with Sunday school and Church’s school holiday kids’ program
+          • Helped out with Sunday school and Church's school holiday kids' program
           (about 2 to 3 times a year)
         </p>
         <div class="gap"></div>
@@ -970,8 +1010,12 @@ const lazyload = () => {
           </p>
           <p class="school-small-text black">Computer Science</p>
         </div>
+        <div class="gap"></div>
         <div class="gap d-block d-sm-none"></div>
         <div class="gap d-block d-sm-none"></div>
+        <p class="school-small-text black">
+          <span class="red">•</span> Academic teaching assistant for SOFT2412 - Agile Software Development Practices (Java)
+        </p>
         <img
           data-aos="fade-up"
           loading="lazy"
@@ -1272,7 +1316,7 @@ const lazyload = () => {
               References on request
             </div>
             <div class="contact-info-for-mobile white sansSerifFLF-demibold">
-              <span class="productionYear"></span>&nbsp;A Richard Lee’s Production
+              <span class="productionYear"></span>&nbsp;A Richard Lee's Production
             </div>
             <div class="d-flex flex-row mt-3">
               <img height="30px" class="mr-3" src="Assets/flag/australia.png" />
@@ -1331,7 +1375,7 @@ const lazyload = () => {
               <p class="bottomMessage copyright-for-tablet">
                 <span class="productionYear"></span
                 ><span class="d-sm-none d-xl-inline-block">&nbsp;A</span>&nbsp;Richard
-                Lee<span class="d-sm-none d-xl-inline-block">’s Production</span>
+                Lee<span class="d-sm-none d-xl-inline-block">'s Production</span>
               </p>
               <div class="d-flex flex-row flag-for-tablet">
                 <img height="30px" class="mr-3" src="Assets/flag/australia.png" />

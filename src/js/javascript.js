@@ -727,12 +727,7 @@ const lazyload = () => {
           • Sponsored by Red Bull, hold events about once every month during the
           semesters
         </p>
-        <img
-          data-aos="fade-up"
-          loading="lazy"
-          src="./Assets/UoA-PG-2019Logo.png"
-          class="w-100 pt-4 pb-5 uoa-pg-2019"
-        />
+        <div class="gap"></div>
         <div class="title-box">
           <div class="h-100 d-flex flex-row">
             <p class="job-title text-nowrap-tablet red">
@@ -824,28 +819,6 @@ const lazyload = () => {
             />
           </div>
         </a>
-        <div class="gap"></div>
-        <div class="title-box">
-          <div class="h-100 d-flex flex-row">
-            <p class="job-title text-nowrap-tablet red">
-              Automotive Mechanic Assistant in Shanghai
-            </p>
-            <img
-              src="./Assets/mechanic png/mechanic.png"
-              class="h-75 pl-3 d-none d-sm-block"
-            />
-          </div>
-          <div class="title-box-right"></div>
-        </div>
-        <div class="gap d-block d-sm-none"></div>
-        <div class="gap d-block d-sm-none"></div>
-        <div class="gap d-block d-sm-none"></div>
-        <p class="date-range">2016-2018</p>
-        <p class="job-description w-100">
-          • Performed a number of basic servicing tasks on vehicles, including oil
-          changes, tyre changes, repair and replacement of minor engine components,
-          and cleaning of cars
-        </p>
         <div class="gap"></div>
         <div class="gap d-block d-sm-none"></div>
         <p class="job-title red">

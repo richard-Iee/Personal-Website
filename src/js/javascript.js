@@ -108,7 +108,7 @@ const lazyload = () => {
         </div>
         <div class="gap d-block d-sm-none"></div>
         <p class="date-range">
-          SLIK Creative Agency&nbsp;&nbsp;|&nbsp;&nbsp;Jun<span class="d-none d-sm-inline-block">e</span> 2022 — Current&nbsp;&nbsp;|&nbsp;&nbsp;Sydney, Australia
+          SLIK Creative Agency&nbsp;&nbsp;|&nbsp;&nbsp;Jun<span class="d-none d-sm-inline-block">e</span> 2022 — Dec<span class="d-none d-sm-inline-block">ember</span> 2022&nbsp;&nbsp;|&nbsp;&nbsp;Sydney, Australia
         </p>
         <p class="job-description">
           • Created Australia's first Metaverse virtual playground with Three.js and Blender for hosting virtual meetings and corporate events

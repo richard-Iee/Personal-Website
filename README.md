@@ -1,3 +1,8 @@
+# [Deprecated]
+
+> [!IMPORTANT]  
+> [Deprecated] Please visit V2 at: https://github.com/richard875/Richard-Website
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/1d917ce8-19b0-47b0-954b-f48f9f31a0a3/deploy-status)](https://app.netlify.com/sites/richard-lee/deploys)
 
 ### Come have a look: <a href="https://richard-lee.com/" target="_blank">richard-lee.com</a>
